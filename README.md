@@ -43,3 +43,4 @@ Le dépôt peut ensuite être importé directement dans Vercel. Chaque nouveau c
 - `components/` : composants visuels
 - `lib/projects.ts` : contenu des projets
 - `public/images/` : photos et visuels
+Portfolio Paul Sebille
