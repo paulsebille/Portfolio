@@ -45,10 +45,25 @@ export default async function ProjectPage({
               />
               <div className="project-hero-image-label">{project.visualLabel ?? project.brand}</div>
             </div>
+          ) : project.slug === "disney-plus" ? (
+            <div className="project-brand-visual">
+              <Image
+                src="/images/disney-plus.webp"
+                alt="Disney+ — visuel de lancement"
+                fill
+                priority
+                sizes="(max-width: 800px) 100vw, 1240px"
+              />
+              <div className="project-brand-overlay" />
+              <div className="project-brand-copy">
+                <span>DISNEY+</span>
+                <small>Une plateforme. Des centaines d’histoires. Un nouveau territoire.</small>
+              </div>
+            </div>
           ) : (
             <div className="project-brand-visual">
-              <span>DISNEY+</span>
-              <small>Une plateforme. Des centaines d’histoires. Un nouveau territoire.</small>
+              <span>{project.visualLabel ?? project.brand}</span>
+              <small>Une expérience pensée pour créer de l’attention, de l’émotion et du lien.</small>
             </div>
           )}
         </div>

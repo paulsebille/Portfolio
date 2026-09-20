@@ -10,29 +10,26 @@ export function About() {
   return (
     <section className="about" id="about">
       <div className="container about-grid">
-        <div>
-          <p className="eyebrow">À propos</p>
-          <h2>Des idées qui prennent vie.</h2>
+        <div className="about-intro">
+          <div className="section-marker"><span>02</span><i /></div>
+          <h2>Donner une forme<br />à <em>l’idée.</em></h2>
+          <div className="about-photo">
+            <img src="/images/paul-sebille.jpg" alt="Paul Sebille" />
+            <div className="about-photo-note"><span>À propos</span><span>Marketing · Experience</span></div>
+          </div>
         </div>
-        <div>
-          <p>
-            Responsable Marketing, j’imagine et pilote des dispositifs qui
-            connectent les marques à leurs publics — de la stratégie à
-            l’exécution, du concept au résultat.
-          </p>
-          <p className="about-secondary">
-            Mon parcours croise deux univers qui m’ont appris à penser la
-            marque comme une expérience : le divertissement et l’automobile.
-            Aujourd’hui, j’en réunis les codes pour créer des campagnes,
-            partenariats, événements et contenus qui ont une vraie raison
-            d’exister.
-          </p>
+        <div className="about-copy">
+          <p className="about-lead">Je conçois les marques comme des univers à faire vivre — pas seulement comme des messages à diffuser.</p>
+          <p className="about-secondary">Mon parcours m’a fait passer du divertissement à l’automobile et aux univers premium. J’y ai appris à penser chaque projet comme une rencontre : une idée claire, une exécution exigeante et une expérience qui laisse quelque chose derrière elle.</p>
+          <p className="about-secondary">Aujourd’hui, j’interviens de la stratégie au terrain, en faisant dialoguer marketing, contenu, événementiel, influence, partenariats et business.</p>
+
           <div className="expertise-list">
             {expertise.map(([number, title, text]) => (
               <div className="expertise" key={number}>
-                <span>{number}</span>
+                <span className="expertise-number">{number}</span>
                 <strong>{title}</strong>
-                <span>{text}</span>
+                <span className="expertise-detail">{text}</span>
+                <span className="expertise-arrow">↗</span>
               </div>
             ))}
           </div>
