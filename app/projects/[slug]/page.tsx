@@ -1,6 +1,7 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
-import { projects } from "@/lib/projects";
 import Link from "next/link";
+import { projects } from "@/lib/projects";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -33,10 +34,23 @@ export default async function ProjectPage({
 
       <section className="project-visual">
         <div className="container">
-          <div className="visual-placeholder large">
-            <span>{project.brand}</span>
-            <small>Ajouter votre visuel principal dans /public/images</small>
-          </div>
+          {project.heroImage ? (
+            <div className="project-hero-image">
+              <Image
+                src={project.heroImage}
+                alt={project.title}
+                fill
+                priority
+                sizes="(max-width: 800px) 100vw, 1240px"
+              />
+              <div className="project-hero-image-label">{project.visualLabel ?? project.brand}</div>
+            </div>
+          ) : (
+            <div className="project-brand-visual">
+              <span>DISNEY+</span>
+              <small>Une plateforme. Des centaines d’histoires. Un nouveau territoire.</small>
+            </div>
+          )}
         </div>
       </section>
 
@@ -44,46 +58,62 @@ export default async function ProjectPage({
         <div className="content-main">
           <div>
             <p className="eyebrow">Le projet</p>
-            <h2>Transformer une intention en expérience.</h2>
+            <h2>{project.slug === "canneseries-audi" ? "Transformer un partenariat en plateforme d’expérience." : project.title}</h2>
             <p>{project.description}</p>
           </div>
 
           <div className="content-block">
             <p className="eyebrow">Approche</p>
             <div className="content-grid">
-              {project.approach.map((item) => (
-                <div key={item.title}>
+              {project.approach.map((item, index) => (
+                <div key={item.title} className="approach-item">
+                  <span className="approach-number">{String(index + 1).padStart(2, "0")}</span>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
                 </div>
               ))}
             </div>
           </div>
+
+          {project.results.length === 0 && (
+            <div className="project-role-note">
+              <p className="eyebrow">Mon rôle</p>
+              <p>Relations presse · Relations publiques · Influence · Organisation événementielle · Invitations influenceurs · Rédaction · Création de supports graphiques · Réseaux sociaux</p>
+            </div>
+          )}
         </div>
 
-        <aside className="results-card">
-          <p className="eyebrow">Résultats clés</p>
-          {project.results.map((result) => (
-            <div className="result" key={result.label}>
-              <strong>{result.value}</strong>
-              <span>{result.label}</span>
+        {project.results.length > 0 && (
+          <aside className="results-card">
+            <p className="eyebrow">Résultats & repères</p>
+            {project.results.map((result) => (
+              <div className="result" key={`${result.value}-${result.label}`}>
+                <strong>{result.value}</strong>
+                <span>{result.label}</span>
+                {result.note && <small>{result.note}</small>}
+              </div>
+            ))}
+          </aside>
+        )}
+      </section>
+
+      {project.gallery && project.gallery.length > 0 && (
+        <section className="project-gallery container">
+          {project.gallery.map((image, index) => (
+            <div className={`gallery-image gallery-image-${index + 1}`} key={image}>
+              <Image src={image} alt={`${project.title} — visuel ${index + 1}`} fill sizes="(max-width: 800px) 100vw, 60vw" />
             </div>
           ))}
-        </aside>
-      </section>
+        </section>
+      )}
 
-      <section className="project-gallery container">
-        {[1, 2, 3].map((n) => (
-          <div className="visual-placeholder" key={n}>
-            <span>{project.brand}</span>
-            <small>Visuel {n}</small>
-          </div>
-        ))}
-      </section>
-
-      <div className="container project-next">
+      <section className="project-closing container">
+        <p className="eyebrow">Mon rôle</p>
+        <p className="project-closing-text">
+          {project.role} · {project.categories.join(" · ")}
+        </p>
         <Link href="/#work" className="button">Voir tous les projets</Link>
-      </div>
+      </section>
     </main>
   );
 }

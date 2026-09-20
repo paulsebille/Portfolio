@@ -4,7 +4,7 @@ export function About() {
     ["02", "Brand experience", "Événementiel, expériences clients, lancements"],
     ["03", "Digital & contenu", "Social media, CRM, campagnes, influence"],
     ["04", "Partenariats", "Sponsoring, collaborations, activations"],
-    ["05", "Pilotage", "Budget, KPI, agences, management"],
+    ["05", "Pilotage", "KPI, agences, prestataires, coordination"],
   ];
 
   return (
@@ -19,6 +19,13 @@ export function About() {
             Responsable Marketing, j’imagine et pilote des dispositifs qui
             connectent les marques à leurs publics — de la stratégie à
             l’exécution, du concept au résultat.
+          </p>
+          <p className="about-secondary">
+            Mon parcours croise deux univers qui m’ont appris à penser la
+            marque comme une expérience : le divertissement et l’automobile.
+            Aujourd’hui, j’en réunis les codes pour créer des campagnes,
+            partenariats, événements et contenus qui ont une vraie raison
+            d’exister.
           </p>
           <div className="expertise-list">
             {expertise.map(([number, title, text]) => (
