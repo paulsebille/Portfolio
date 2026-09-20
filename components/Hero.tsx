@@ -29,14 +29,15 @@ export function Hero() {
       <div className="hero-inner">
         <div className="hero-stage">
           <div className="hero-copy">
-            <p className="hero-kicker">Responsable Marketing · Brand Experience</p>
             <h1>
               <span>Marketing &amp;</span>
               <span>Brand <i>Experience.</i></span>
             </h1>
             <div className="hero-intro">
               <p className="hero-intro-quote">J’ai appris à faire rêver. Aujourd’hui, je veux prendre part à votre histoire.</p>
-              <p className="hero-intro-body">Du divertissement aux univers premium, mon parcours m’a appris une chose : les marques les plus fortes savent se réinventer sans perdre ce qui les rend uniques. Réinventer les codes. Renouveler les expériences. Imaginer la suite.</p>
+              <p className="hero-intro-body">Je transforme les idées en expériences qui donnent envie de vivre une marque.
+              <br />
+              <span>Des univers justes, désirables et pensés pour laisser une empreinte.</span></p>
             </div>
             <Link href="#work" className="hero-scroll">
               <span>Explorer les projets</span>
@@ -57,7 +58,6 @@ export function Hero() {
               />
               <div className="hero-portrait-shine" />
             </div>
-            <span className="portrait-caption">Paul Sebille · 2026</span>
           </div>
         </div>
       </div>

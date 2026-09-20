@@ -56,8 +56,7 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
                   <ProjectVisual project={project} />
                   <div className="project-card-shade" />
                   <div className="project-card-light" />
-                  <div className="project-card-topline"><span className="project-card-year">{project.year}</span></div>
-                  <div className="project-card-arrow">↗</div>
+                  <div className="project-card-arrow" aria-hidden="true"><span>↗</span></div>
                   <div className="project-card-content">
                     <span className="project-card-brand">{project.brand}</span>
                     <h3>{project.title}</h3>

@@ -5,8 +5,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="header-inner">
         <Link href="/" className="logo" aria-label="Paul Sebille — accueil">
-          <span>PAUL</span>
-          <strong>SEBILLE</strong>
+          <strong>Paul Sebille</strong>
         </Link>
         <nav className="nav" aria-label="Navigation principale">
           <Link href="/#work">Projets</Link>

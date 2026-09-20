@@ -11,11 +11,14 @@ export function About() {
     <section className="about" id="about">
       <div className="container about-grid">
         <div className="about-intro">
-          <div className="section-marker"><span>02</span><i /></div>
+          <div className="section-marker"><i /></div>
           <h2>Donner une forme<br />à <em>l’idée.</em></h2>
-          <div className="about-photo">
-            <img src="/images/paul-sebille.jpg" alt="Paul Sebille" />
-            <div className="about-photo-note"><span>À propos</span><span>Marketing · Experience</span></div>
+          <div className="about-idea-visual" aria-hidden="true">
+            <div className="idea-orbit idea-orbit-one" />
+            <div className="idea-orbit idea-orbit-two" />
+            <div className="idea-core"><span>✦</span></div>
+            <div className="idea-line idea-line-one" />
+            <div className="idea-line idea-line-two" />
           </div>
         </div>
         <div className="about-copy">
@@ -29,7 +32,6 @@ export function About() {
                 <span className="expertise-number">{number}</span>
                 <strong>{title}</strong>
                 <span className="expertise-detail">{text}</span>
-                <span className="expertise-arrow">↗</span>
               </div>
             ))}
           </div>
