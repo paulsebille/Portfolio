@@ -42,7 +42,6 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
     <section className="work" id="work">
       <div className="work-heading container">
         <div>
-          <div className="section-marker"><span>01</span><i /></div>
           <h2>Des expériences<br />qui créent <em>du lien.</em></h2>
         </div>
         <p className="projects-lead">Une sélection de campagnes, lancements, partenariats et expériences imaginés et pilotés entre divertissement, automobile et univers premium.</p>
@@ -50,14 +49,14 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
 
       <div className="carousel-shell">
         <div className="carousel-track" ref={trackRef} aria-label="Sélection de projets">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <article className="project-card" key={project.slug}>
               <Link href={`/projects/${project.slug}`} className="project-card-link">
                 <div className="project-card-media">
                   <ProjectVisual project={project} />
                   <div className="project-card-shade" />
                   <div className="project-card-light" />
-                  <div className="project-card-topline"><span>{String(index + 1).padStart(2, "0")}</span><span>{project.year}</span></div>
+                  <div className="project-card-topline"><span className="project-card-year">{project.year}</span></div>
                   <div className="project-card-arrow">↗</div>
                   <div className="project-card-content">
                     <span className="project-card-brand">{project.brand}</span>
@@ -73,9 +72,7 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
 
       <div className="carousel-controls container">
         <div className="carousel-progress" aria-label="Progression des projets">
-          <span className="progress-active">{String(active + 1).padStart(2, "0")}</span>
           <div className="carousel-progress-line"><i style={{ width: `${((active + 1) / projects.length) * 100}%` }} /></div>
-          <span>{String(projects.length).padStart(2, "0")}</span>
         </div>
         <div className="carousel-buttons">
           <button type="button" onClick={() => goTo(Math.max(0, active - 1))} disabled={active === 0} aria-label="Projet précédent">←</button>

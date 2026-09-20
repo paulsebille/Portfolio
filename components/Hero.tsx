@@ -27,54 +27,38 @@ export function Hero() {
       <div className="hero-orb hero-orb-one" />
       <div className="hero-orb hero-orb-two" />
       <div className="hero-inner">
-        <div className="hero-topline">
-          <span>Nice · Côte d’Azur</span>
-        </div>
-
         <div className="hero-stage">
+          <div className="hero-copy">
+            <p className="hero-kicker">Responsable Marketing · Brand Experience</p>
+            <h1>
+              <span>Marketing &amp;</span>
+              <span>Brand <i>Experience.</i></span>
+            </h1>
+            <div className="hero-intro">
+              <p className="hero-intro-quote">J’ai appris à faire rêver. Aujourd’hui, je veux prendre part à votre histoire.</p>
+              <p className="hero-intro-body">Du divertissement aux univers premium, mon parcours m’a appris une chose : les marques les plus fortes savent se réinventer sans perdre ce qui les rend uniques. Réinventer les codes. Renouveler les expériences. Imaginer la suite.</p>
+            </div>
+            <Link href="#work" className="hero-scroll">
+              <span>Explorer les projets</span>
+              <span className="hero-scroll-circle">↓</span>
+            </Link>
+          </div>
+
           <div className="hero-portrait-wrap">
             <div className="hero-portrait-glow" />
-            <div className="hero-portrait" style={{ transform: "translate3d(calc(var(--mx) * -7px), calc(var(--my) * -7px), 0)" }}>
+            <div className="hero-portrait" style={{ transform: "translate3d(calc(var(--mx) * -6px), calc(var(--my) * -6px), 0)" }}>
               <Image
                 src="/images/paul-sebille.jpg"
                 alt="Paul Sebille"
                 fill
                 priority
-                sizes="(max-width: 800px) 78vw, 470px"
+                sizes="(max-width: 800px) 76vw, 540px"
                 className="hero-portrait-image"
               />
               <div className="hero-portrait-shine" />
             </div>
             <span className="portrait-caption">Paul Sebille · 2026</span>
           </div>
-
-          <div className="hero-title-wrap">
-            <p className="hero-kicker">Responsable Marketing</p>
-            <h1>
-              <span>Marketing</span>
-              <span className="hero-title-amp">&amp;</span>
-              <span>Brand <i>Experience.</i></span>
-            </h1>
-            <div className="hero-title-meta">
-              <span>Stratégie</span>
-              <span>Créativité</span>
-              <span>Expérience</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="hero-bottom">
-          <div className="hero-statement">
-            <span className="hero-statement-line" />
-            <p>
-              Du divertissement aux univers premium, j’imagine des expériences
-              qui donnent aux marques une présence, une émotion et une histoire.
-            </p>
-          </div>
-          <Link href="#work" className="hero-scroll">
-            <span>Explorer</span>
-            <span className="hero-scroll-circle">↓</span>
-          </Link>
         </div>
       </div>
       <div className="hero-grain" aria-hidden="true" />
