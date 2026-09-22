@@ -86,7 +86,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <div className="project-gallery-grid">
             {project.gallery.map((image, index) => (
               <div className={`gallery-image gallery-image-${index + 1}`} key={`${image}-${index}`}>
-                <Image src={image} alt={`${project.title} — visuel ${index + 1}`} fill sizes="(max-width: 800px) 100vw, 50vw" />
+                <Image src={image} alt={`${project.title} — visuel ${index + 1}`} fill sizes="(max-width: 800px) 100vw, 50vw" className="gallery-img-fit" />
               </div>
             ))}
           </div>

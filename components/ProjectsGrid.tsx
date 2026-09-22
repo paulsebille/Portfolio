@@ -6,6 +6,15 @@ import type { Project } from "@/lib/projects";
 import { useEffect, useRef, useState } from "react";
 
 function ProjectVisual({ project }: { project: Project }) {
+  if (project.slug === "audi-f1-experience") {
+    return <Image src="/images/audi-f1-p1597797.jpg" alt={project.title} fill sizes="(max-width: 800px) 88vw, 820px" className="carousel-image carousel-image-f1" />;
+  }
+  if (project.slug === "cupra-nice-jazz-festival") {
+    return <Image src="/images/cupra-raval-njf.jpg" alt={project.title} fill sizes="(max-width: 800px) 88vw, 820px" className="carousel-image carousel-image-raval" />;
+  }
+  if (project.slug === "roi-lion-disney") {
+    return <Image src="/images/roi-lion-hero.jpg" alt={project.title} fill sizes="(max-width: 800px) 88vw, 820px" className="carousel-image carousel-image-roi" />;
+  }
   if (project.slug === "disney-plus") {
     return <Image src="/images/disney-plus.webp" alt="Disney+" fill sizes="(max-width: 800px) 88vw, 820px" className="carousel-image disney-image" />;
   }

@@ -127,34 +127,6 @@ export const projects: Project[] = [
     visualLabel: "KENZO × ID. BUZZ"
   },
   {
-    slug: "cupra-nice-jazz-festival",
-    brand: "CUPRA × NICE JAZZ FESTIVAL",
-    title: "Quand la CUPRA Raval entre en scène",
-    year: "2026",
-    intro:
-      "Du 23 au 25 juillet 2026, CUPRA s’est invitée au cœur du Nice Jazz Festival à travers une collaboration réunissant CUPRA, Sixt France, le Nice Jazz Festival et la Ville de Nice.",
-    role: "Responsable Marketing",
-    categories: ["Partenariats", "Événementiel", "Activation commerciale", "Contenu"],
-    description:
-      "L’objectif : profiter de la puissance d’un événement culturel majeur de la Côte d’Azur pour faire émerger la nouvelle CUPRA RAVAL, créer du contact avec le public et transformer cette visibilité en opportunités commerciales. L’enjeu était double : donner une forte visibilité à la nouveauté tout en créant un dispositif capable de générer du business.",
-    approach: [
-      { title: "Présence", text: "Création d’un corner CUPRA × Sixt avec la RAVAL au centre du dispositif, un néon signature et un jeu de lumière inspiré de l’identité du festival." },
-      { title: "Découverte produit", text: "Roue de la fortune digitale, lots et présence de l’équipe commerciale et d’hôtes pour engager les visiteurs et créer des conversations autour de la RAVAL." },
-      { title: "VIP", text: "Invitation de clients et prospects CUPRA pour renforcer la fidélisation et créer une découverte privilégiée du nouveau modèle." },
-      { title: "Amplification", text: "Production de contenus photo et vidéo et relais social pour prolonger l’expérience au-delà du site du festival." }
-    ],
-    results: [
-      { value: "+50K", label: "participants" },
-      { value: "+650", label: "lots distribués" },
-      { value: "412", label: "leads générés" },
-      { value: "12", label: "clients & prospects invités" },
-      { value: "4", label: "ventes à J+7" }
-    ],
-    heroImage: "/images/cupra-hero.jpg",
-    gallery: ["/images/cupra-concert.jpg", "/images/cupra-public.jpg", "/images/cupra-detail.jpg"],
-    visualLabel: "CUPRA RAVAL"
-  },
-  {
     slug: "roi-lion-disney",
     brand: "DISNEY × LE ROI LION",
     title: "Faire d’un film un événement planétaire",
@@ -181,6 +153,34 @@ export const projects: Project[] = [
     heroImage: "/images/roi-lion-hero.jpg",
     gallery: ["/images/roi-lion-hero.jpg"],
     visualLabel: "LE ROI LION"
+  },
+  {
+    slug: "cupra-nice-jazz-festival",
+    brand: "CUPRA × NICE JAZZ FESTIVAL",
+    title: "Quand la CUPRA Raval entre en scène",
+    year: "2026",
+    intro:
+      "Du 23 au 25 juillet 2026, CUPRA s’est invitée au cœur du Nice Jazz Festival à travers une collaboration réunissant CUPRA, Sixt France, le Nice Jazz Festival et la Ville de Nice.",
+    role: "Responsable Marketing",
+    categories: ["Partenariats", "Événementiel", "Activation commerciale", "Contenu"],
+    description:
+      "L’objectif : profiter de la puissance d’un événement culturel majeur de la Côte d’Azur pour faire émerger la nouvelle CUPRA RAVAL, créer du contact avec le public et transformer cette visibilité en opportunités commerciales. L’enjeu était double : donner une forte visibilité à la nouveauté tout en créant un dispositif capable de générer du business.",
+    approach: [
+      { title: "Présence", text: "Création d’un corner CUPRA × Sixt avec la RAVAL au centre du dispositif, un néon signature et un jeu de lumière inspiré de l’identité du festival." },
+      { title: "Découverte produit", text: "Roue de la fortune digitale, lots et présence de l’équipe commerciale et d’hôtes pour engager les visiteurs et créer des conversations autour de la RAVAL." },
+      { title: "VIP", text: "Invitation de clients et prospects CUPRA pour renforcer la fidélisation et créer une découverte privilégiée du nouveau modèle." },
+      { title: "Amplification", text: "Production de contenus photo et vidéo et relais social pour prolonger l’expérience au-delà du site du festival." }
+    ],
+    results: [
+      { value: "+50K", label: "participants" },
+      { value: "+650", label: "lots distribués" },
+      { value: "412", label: "leads générés" },
+      { value: "12", label: "clients & prospects invités" },
+      { value: "4", label: "ventes à J+7" }
+    ],
+    heroImage: "/images/cupra-hero.jpg",
+    gallery: ["/images/cupra-concert.jpg", "/images/cupra-public.jpg", "/images/cupra-detail.jpg"],
+    visualLabel: "CUPRA RAVAL"
   },
   {
     slug: "e-kardashian",
