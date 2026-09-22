@@ -129,7 +129,7 @@ export const projects: Project[] = [
   {
     slug: "cupra-nice-jazz-festival",
     brand: "CUPRA × NICE JAZZ FESTIVAL",
-    title: "Quand CUPRA RAVAL entre en scène",
+    title: "Quand la CUPRA Raval entre en scène",
     year: "2026",
     intro:
       "Du 23 au 25 juillet 2026, CUPRA s’est invitée au cœur du Nice Jazz Festival à travers une collaboration réunissant CUPRA, Sixt France, le Nice Jazz Festival et la Ville de Nice.",
@@ -157,7 +157,7 @@ export const projects: Project[] = [
   {
     slug: "roi-lion-disney",
     brand: "DISNEY × LE ROI LION",
-    title: "Faire d’un film un événement avant sa sortie",
+    title: "Faire d’un film un événement planétaire",
     year: "2019",
     intro:
       "Pour accompagner la sortie française du Roi Lion, un dispositif mêlant relations presse, voyages presse, influence, événementiel, création de contenus et animation digitale.",

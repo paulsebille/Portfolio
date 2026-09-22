@@ -42,9 +42,9 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
     <section className="work" id="work">
       <div className="work-heading container">
         <div>
-          <h2>Des expériences<br />qui créent <em>du lien.</em></h2>
+          <h2>Des expériences<br />qui créent <em>du lien — et du business.</em></h2>
         </div>
-        <p className="projects-lead">Une sélection de campagnes, lancements, partenariats et expériences conçus entre divertissement, automobile et univers premium — avec une même exigence : relier l’idée, l’expérience et le business.</p>
+        <p className="projects-lead">Découvrez une sélection de campagnes, lancements, partenariats et expériences entre divertissement, automobile et univers premium — toujours avec la même ambition : transformer une idée en expérience et en impact business.</p>
       </div>
 
       <div className="carousel-shell">
