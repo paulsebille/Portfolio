@@ -1,10 +1,9 @@
 export function About() {
-  const skills = [
-    ["01", "Stratégie & pilotage", "Plans marketing, activation, KPI, budgets, business"],
-    ["02", "Brand experience", "Événementiel, lancements, expériences clients"],
-    ["03", "Digital & acquisition", "Social media, CRM, Google Ads, contenu, influence"],
-    ["04", "Partenariats", "Sponsoring, collaborations, activations locales"],
-    ["05", "Management & One Team", "Fédérer, coordonner, donner un cap et faire avancer les équipes ensemble"],
+  const principles = [
+    ["Stratégie", "Donner un cap, poser les objectifs et construire un dispositif qui sert vraiment la marque."],
+    ["Créativité", "Créer des idées désirables, des expériences qui se vivent et des univers qui restent."],
+    ["One Team", "Faire avancer les équipes ensemble, coordonner, fédérer et manager avec une énergie collective."],
+    ["Performance", "Les KPI ne sont pas une finalité : ils permettent de décider, d’optimiser et de faire grandir le business."],
   ];
 
   const hardSkills = ["Pack Office", "Adobe Creative Cloud", "Google Ads", "WordPress", "Social Media", "CRM"];
@@ -13,34 +12,44 @@ export function About() {
   return (
     <section className="about" id="about">
       <div className="container">
-        <div className="about-header">
-          <div>
-            <div className="section-marker"><i /></div>
-            <h2>Une vision créative,<br /><em>pilotée pour le business.</em></h2>
+        <div className="about-hero">
+          <div className="about-hero-copy">
+            <p className="eyebrow">À propos</p>
+            <h2>Une vision créative.<br /><em>Une énergie collective. Un impact qui compte.</em></h2>
+            <p className="about-hero-line">Créer. Fédérer. Mesurer. Faire avancer.</p>
           </div>
-          <p className="about-header-lead">Le marketing crée de la préférence, de l’engagement et, surtout, des opportunités de croissance.</p>
+          <div className="about-hero-visual" aria-hidden="true">
+            <span className="about-orb orb-a" />
+            <span className="about-orb orb-b" />
+            <span className="about-orb orb-c" />
+            <span className="about-word word-1">CRÉATIVITÉ</span>
+            <span className="about-word word-2">ONE TEAM</span>
+            <span className="about-word word-3">IMPACT</span>
+            <span className="about-hero-core">+</span>
+          </div>
+        </div>
+
+        <div className="about-manifesto">
+          <p>Je relie stratégie, créativité, expérience client et performance pour transformer une vision en projets qui créent de la valeur.</p>
+          <span>Le bon concept attire. Le bon collectif l’exécute. Les bons KPI permettent de l’améliorer.</span>
         </div>
 
         <div className="about-principles">
-          <div className="about-principle">
-            <span className="principle-icon">↗</span>
-            <div><strong>Créer de l’envie</strong><span>Une marque doit se vivre autant qu’elle se regarde.</span></div>
-          </div>
-          <div className="about-principle">
-            <span className="principle-icon">◎</span>
-            <div><strong>Piloter par les KPI</strong><span>Chaque activation se pense avec des objectifs et des indicateurs clairs.</span></div>
-          </div>
-          <div className="about-principle">
-            <span className="principle-icon">⌁</span>
-            <div><strong>Faire en équipe</strong><span>One Team, coordination et management pour transformer l’ambition en résultat.</span></div>
-          </div>
+          {principles.map(([title, text], index) => (
+            <article className="about-principle-card" key={title}>
+              <span className="principle-index">0{index + 1}</span>
+              <div className="principle-icon" aria-hidden="true">↗</div>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
         </div>
 
         <div className="about-body">
-          <div>
-            <p className="about-lead">Je relie stratégie, créativité, expérience client et performance pour faire avancer une marque.</p>
-            <p className="about-secondary">Mon parcours m’a fait passer du divertissement à l’automobile et aux univers premium. J’aime passer de l’idée au terrain, connecter les équipes et garder une lecture simple : pourquoi le fait-on, pour qui, et quel impact doit-on créer ?</p>
-            <p className="about-secondary"><strong>Les KPI sont un réflexe, pas une finalité.</strong> Ils permettent de comprendre ce qui fonctionne, d’optimiser les dispositifs et de relier le marketing aux enjeux business.</p>
+          <div className="about-story">
+            <p className="eyebrow">Ma façon de travailler</p>
+            <p className="about-lead">J’aime passer de l’idée au terrain, faire travailler les expertises ensemble et garder une lecture simple : <em>pourquoi, pour qui, avec quel impact ?</em></p>
+            <p className="about-secondary">Mon parcours entre divertissement, automobile et univers premium m’a appris à conjuguer exigence créative, expérience client et réalité opérationnelle. Je crois aux équipes qui avancent en <strong>One Team</strong>, avec un cap clair, de la confiance et l’envie de faire mieux ensemble.</p>
           </div>
 
           <div className="skills-panel">
@@ -53,17 +62,6 @@ export function About() {
               <div className="skill-pills">{softSkills.map(skill => <span key={skill}>{skill}</span>)}</div>
             </div>
           </div>
-        </div>
-
-        <div className="expertise-list">
-          {skills.map(([number, title, text]) => (
-            <div className="expertise" key={number}>
-              <span className="expertise-number">{number}</span>
-              <strong>{title}</strong>
-              <span className="expertise-detail">{text}</span>
-              <span className="expertise-arrow">↗</span>
-            </div>
-          ))}
         </div>
       </div>
     </section>
