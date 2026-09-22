@@ -44,7 +44,7 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
         <div>
           <h2>Des expériences<br />qui créent <em>du lien.</em></h2>
         </div>
-        <p className="projects-lead">Une sélection de campagnes, lancements, partenariats et expériences imaginés et pilotés entre divertissement, automobile et univers premium.</p>
+        <p className="projects-lead">Une sélection de campagnes, lancements, partenariats et expériences conçus entre divertissement, automobile et univers premium — avec une même exigence : relier l’idée, l’expérience et le business.</p>
       </div>
 
       <div className="carousel-shell">
@@ -56,7 +56,7 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
                   <ProjectVisual project={project} />
                   <div className="project-card-shade" />
                   <div className="project-card-light" />
-                  <div className="project-card-arrow" aria-hidden="true"><span>↗</span></div>
+                  <div className="project-card-arrow" aria-hidden="true"><span>Voir le projet</span><b>↗</b></div>
                   <div className="project-card-content">
                     <span className="project-card-brand">{project.brand}</span>
                     <h3>{project.title}</h3>

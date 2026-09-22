@@ -10,7 +10,7 @@ export function SiteHeader() {
         <nav className="nav" aria-label="Navigation principale">
           <Link href="/#work">Projets</Link>
           <Link href="/#about">À propos</Link>
-          <a href="mailto:paul.sebille2@gmail.com">Contact</a>
+          <Link href="/#contact">Contact</Link>
         </nav>
       </div>
     </header>

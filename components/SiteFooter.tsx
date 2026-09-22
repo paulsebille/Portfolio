@@ -5,9 +5,9 @@ export function SiteFooter() {
       <div className="container footer-inner">
         <p className="footer-kicker">Un projet, une ambition, une histoire à écrire.</p>
         <h2 className="footer-title">La suite mérite<br /><em>d’être imaginée.</em></h2>
-        <a className="footer-cta" href="mailto:paul.sebille2@gmail.com"><span>Écrivons la suite ensemble</span><i>↗</i></a>
+        <a className="footer-cta" href="#contact"><span>Écrivons la suite ensemble</span><i>↗</i></a>
 
-        <div className="footer-contact-grid">
+        <div className="footer-contact-grid" id="contact">
           <a href="mailto:paul.sebille2@gmail.com" aria-label="Envoyer un email">
             <span className="footer-contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>
             <span><small>Email</small><strong>paul.sebille2@gmail.com</strong></span>

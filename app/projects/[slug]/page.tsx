@@ -21,14 +21,26 @@ export default async function ProjectPage({
     <main className="project-page">
       <section className="project-hero">
         <div className="container">
-          <Link href="/#work" className="back-link">← Retour aux projets</Link>
+          <Link href="/#work" className="back-link">← Tous les projets</Link>
           <div className="project-kicker">{project.brand} · {project.year}</div>
           <h1>{project.title}</h1>
           <p className="project-intro">{project.intro}</p>
+
           <div className="project-meta">
             <div><span>Rôle</span>{project.role}</div>
             <div><span>Expertises</span>{project.categories.join(" · ")}</div>
           </div>
+
+          {project.results.length > 0 && (
+            <div className="project-kpi-strip">
+              {project.results.slice(0, 4).map((result) => (
+                <div className="project-kpi" key={`${result.value}-${result.label}`}>
+                  <strong>{result.value}</strong>
+                  <span>{result.label}</span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
@@ -36,34 +48,17 @@ export default async function ProjectPage({
         <div className="container">
           {project.heroImage ? (
             <div className="project-hero-image">
-              <Image
-                src={project.heroImage}
-                alt={project.title}
-                fill
-                priority
-                sizes="(max-width: 800px) 100vw, 1240px"
-              />
+              <Image src={project.heroImage} alt={project.title} fill priority sizes="(max-width: 800px) 100vw, 1240px" />
               <div className="project-hero-image-label">{project.visualLabel ?? project.brand}</div>
-            </div>
-          ) : project.slug === "disney-plus" ? (
-            <div className="project-brand-visual">
-              <Image
-                src="/images/disney-plus.webp"
-                alt="Disney+ — visuel de lancement"
-                fill
-                priority
-                sizes="(max-width: 800px) 100vw, 1240px"
-              />
-              <div className="project-brand-overlay" />
-              <div className="project-brand-copy">
-                <span>DISNEY+</span>
-                <small>Une plateforme. Des centaines d’histoires. Un nouveau territoire.</small>
-              </div>
             </div>
           ) : (
             <div className="project-brand-visual">
-              <span>{project.visualLabel ?? project.brand}</span>
-              <small>Une expérience pensée pour créer de l’attention, de l’émotion et du lien.</small>
+              <Image src="/images/disney-plus.webp" alt="Disney+" fill priority sizes="(max-width: 800px) 100vw, 1240px" />
+              <div className="project-brand-overlay" />
+              <div className="project-brand-copy">
+                <span>{project.visualLabel ?? project.brand}</span>
+                <small>Une expérience pensée pour créer de l’attention, de l’émotion et du lien.</small>
+              </div>
             </div>
           )}
         </div>
@@ -71,16 +66,16 @@ export default async function ProjectPage({
 
       <section className="project-content container">
         <div className="content-main">
-          <div>
+          <div className="project-summary">
             <p className="eyebrow">Le projet</p>
             <h2>{project.slug === "canneseries-audi" ? "Transformer un partenariat en plateforme d’expérience." : project.title}</h2>
             <p>{project.description}</p>
           </div>
 
           <div className="content-block">
-            <p className="eyebrow">Approche</p>
+            <p className="eyebrow">Ce qui a été construit</p>
             <div className="content-grid">
-              {project.approach.map((item, index) => (
+              {project.approach.slice(0, 4).map((item, index) => (
                 <div key={item.title} className="approach-item">
                   <span className="approach-number">{String(index + 1).padStart(2, "0")}</span>
                   <h3>{item.title}</h3>
@@ -89,18 +84,11 @@ export default async function ProjectPage({
               ))}
             </div>
           </div>
-
-          {project.results.length === 0 && (
-            <div className="project-role-note">
-              <p className="eyebrow">Mon rôle</p>
-              <p>Relations presse · Relations publiques · Influence · Organisation événementielle · Invitations influenceurs · Rédaction · Création de supports graphiques · Réseaux sociaux</p>
-            </div>
-          )}
         </div>
 
         {project.results.length > 0 && (
           <aside className="results-card">
-            <p className="eyebrow">Résultats & repères</p>
+            <p className="eyebrow">Impact & KPIs</p>
             {project.results.map((result) => (
               <div className="result" key={`${result.value}-${result.label}`}>
                 <strong>{result.value}</strong>
@@ -124,10 +112,8 @@ export default async function ProjectPage({
 
       <section className="project-closing container">
         <p className="eyebrow">Mon rôle</p>
-        <p className="project-closing-text">
-          {project.role} · {project.categories.join(" · ")}
-        </p>
-        <Link href="/#work" className="button">Voir tous les projets</Link>
+        <p className="project-closing-text">{project.role} · {project.categories.join(" · ")}</p>
+        <Link href="/#contact" className="button">Parlons du prochain projet ↗</Link>
       </section>
     </main>
   );

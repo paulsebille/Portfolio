@@ -37,7 +37,7 @@ export function Hero() {
               <p className="hero-intro-quote">J’ai appris à faire rêver. Aujourd’hui, je veux prendre part à votre histoire.</p>
               <p className="hero-intro-body">Je transforme les idées en expériences qui donnent envie de vivre une marque.
               <br />
-              <span>Des univers justes, désirables et pensés pour laisser une empreinte.</span></p>
+              <span>Des univers désirables, pensés pour créer du lien — et générer de l’impact.</span></p>
             </div>
             <Link href="#work" className="hero-scroll">
               <span>Explorer les projets</span>
