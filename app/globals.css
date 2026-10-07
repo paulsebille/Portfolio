@@ -2555,3 +2555,18 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 /* Preserve the champagne hover hue and blend the portrait into its background */
 .site-header { mix-blend-mode: normal; }
 .hero-portrait { border: 0; }
+
+
+/* Keep the navigation visually secondary to the wordmark */
+.site-header .nav { font-size: 20px; font-weight: 540; }
+.site-header .nav a:hover,
+.site-header.is-scrolled .nav a:hover {
+  transform: translateY(-1px);
+  letter-spacing: inherit;
+}
+@media (max-width:900px) {
+  .site-header .nav { font-size: 17px; }
+}
+@media (max-width:560px) {
+  .site-header .nav { font-size: 15px; }
+}
