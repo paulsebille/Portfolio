@@ -2687,3 +2687,40 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     padding: 15px 14px 17px;
   }
 }
+
+
+/* Framed contact invitation */
+.footer-cta {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(28px, 4vw, 54px);
+  padding: 15px 19px;
+  border: 1px solid rgba(255,255,255,.72);
+  border-radius: 16px;
+  background: transparent;
+  color: #f5f3ee;
+  transition: border-color .35s ease, transform .45s var(--ease), color .35s ease;
+}
+.footer-cta i {
+  display: inline-block;
+  font-size: 23px;
+  line-height: 1;
+  transition: transform .45s var(--ease);
+}
+.footer-cta:hover {
+  transform: translateY(-2px);
+  border-color: #fff;
+  background: transparent;
+  color: #fff;
+}
+.footer-cta:hover i { transform: translateX(5px); }
+.footer-cta:focus-visible {
+  outline: 2px solid rgba(255,255,255,.8);
+  outline-offset: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .footer-cta,
+  .footer-cta i { transition: none; }
+}
