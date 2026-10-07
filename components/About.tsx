@@ -48,8 +48,8 @@ export function About() {
             <span className="creative-orbit orbit-two" />
             <span className="creative-spark spark-one">✦</span>
             <span className="creative-spark spark-two">✦</span>
-            <span className="creative-core">+</span>
-            <span className="creative-label label-one">IDEA</span>
+            <span className="creative-core" aria-label="Étincelle créative">✳</span>
+            <span className="creative-label label-one">IDÉE</span>
             <span className="creative-label label-two">EXPERIENCE</span>
             <span className="creative-label label-three">IMPACT</span>
           </div>
@@ -81,22 +81,23 @@ export function About() {
         <div className="about-lower">
           <article className="about-work-card">
             <div className="about-team-visual" aria-hidden="true">
-              <span>ONE TEAM</span>
-              <i>+</i>
-              <b>IDEAS → TERRAIN</b>
+              <span className="team-art-mark">✳</span>
+              <i className="team-orbit-dot dot-one" />
+              <i className="team-orbit-dot dot-two" />
+              <i className="team-orbit-dot dot-three" />
             </div>
             <div className="about-work-copy">
               <p className="eyebrow">Ma façon de travailler</p>
               <h3>De l’idée au terrain.</h3>
               <p>Je fais travailler les expertises ensemble avec une lecture simple : <em>pourquoi, pour qui, avec quel impact ?</em></p>
-              <small>Divertissement · Automobile · Premium</small>
+              <small className="about-one-team">#OneTeam</small>
             </div>
           </article>
 
           <article className="about-skills-card">
             <div className="skills-card-head">
               <p className="eyebrow">Compétences</p>
-              <span>Ce qui me permet de faire avancer les projets.</span>
+              <span className="skills-editorial-title">Ce qui fait avancer<br />les projets.</span>
             </div>
             <div className="skills-showcase">
               <Reveal className="skills-showcase-group">
