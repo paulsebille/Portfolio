@@ -5,7 +5,7 @@ export function SiteFooter() {
       <div className="container footer-inner">
         <p className="footer-kicker">Un projet, une ambition, une histoire à écrire.</p>
         <h2 className="footer-title">La suite mérite<br /><em>d’être imaginée.</em></h2>
-        <a className="footer-cta" href="mailto:paul.sebille2@gmail.com?subject=Écrivons%20la%20suite%20ensemble"><span>Écrivons la suite ensemble</span><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" /></svg></i></a>
+        <a className="footer-cta" href="mailto:paul.sebille2@gmail.com?subject=Écrivons%20la%20suite%20ensemble"><span>Écrivons la suite ensemble</span><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6.5 14.5 12 9 17.5" /></svg></i></a>
 
         <div className="footer-contact-grid" id="contact">
           <a href="mailto:paul.sebille2@gmail.com" aria-label="Envoyer un email">
