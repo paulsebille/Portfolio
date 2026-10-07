@@ -9,6 +9,9 @@ function ProjectVisual({ project }: { project: Project }) {
   if (project.slug === "disney-plus") {
     return <Image src="/images/disney-plus.webp" alt="Disney+" fill sizes="(max-width: 800px) 88vw, 820px" className="carousel-image disney-image" />;
   }
+  if (project.slug === "audi-f1-experience" && project.heroImage) {
+    return <Image src={project.heroImage} alt={project.title} fill sizes="(max-width: 800px) 88vw, 820px" className="carousel-image carousel-image-f1" />;
+  }
   if (project.heroImage) {
     return <Image src={project.heroImage} alt={project.title} fill sizes="(max-width: 800px) 88vw, 820px" className="carousel-image" />;
   }
