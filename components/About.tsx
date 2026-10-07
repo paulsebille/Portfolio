@@ -42,9 +42,9 @@ export function About() {
         <div className="about-hero">
           <div className="about-hero-copy">
             <h2>
-              <span><strong>Une vision</strong> <em>créative.</em></span>
-              <span><strong>Une énergie</strong> <em>collective.</em></span>
-              <span><strong>Un impact</strong> <em>qui compte.</em></span>
+              <span><strong>Une vision créative.</strong></span>
+              <span><strong>Une énergie collective.</strong></span>
+              <span><em>Un impact qui compte.</em></span>
             </h2>
           </div>
           <div className="about-hero-visual" aria-hidden="true">
