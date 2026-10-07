@@ -50,7 +50,7 @@ export function About() {
             <span className="creative-spark spark-two">✦</span>
             <span className="creative-core" aria-label="Étincelle créative">✳</span>
             <span className="creative-label label-one">IDÉE</span>
-            <span className="creative-label label-two">EXPERIENCE</span>
+            <span className="creative-label label-two">EXPÉRIENCE</span>
             <span className="creative-label label-three">IMPACT</span>
           </div>
           <div className="about-hero-copy">
