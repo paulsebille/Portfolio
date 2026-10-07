@@ -3,88 +3,92 @@
 import { useEffect, useRef, type CSSProperties } from "react";
 
 const principles = [
-  ["Stratégie", "Donner un cap, poser les objectifs et construire le bon dispositif."],
-  ["Créativité", "Créer des idées désirables, des expériences et des univers qui restent."],
-  ["Expérience", "Faire vivre une marque avec un parcours pensé de bout en bout."],
-  ["Performance", "Mesurer, apprendre et optimiser pour faire grandir le business."],
-];
+  ["Stratégie", "Vision · Positionnement · Planning"],
+  ["Créativité", "Concept · Direction artistique · Storytelling"],
+  ["Expérience", "Activation · Événement · Parcours client"],
+  ["Performance", "KPI · Acquisition · Conversion"],
+] as const;
 
-const hardSkills = ["Brand strategy", "Marketing", "Event", "Digital", "CRM", "Media", "Analytics", "Partnerships"];
-const softSkills = ["Leadership", "Créativité", "Coordination", "Curiosité", "Adaptabilité", "Collaboration", "Storytelling", "Esprit d’équipe"];
+const hardSkills = ["Brand strategy", "Marketing", "Event", "Digital", "CRM", "Media", "Analytics"];
+const softSkills = ["Leadership", "Coordination", "Créativité", "Curiosité", "Adaptabilité", "Collaboration"];
 
-function RevealWords({ items }: { items: string[] }) {
-  const ref = useRef<HTMLDivElement>(null);
+function SkillWord({ children, index }: { children: string; index: number }) {
+  return <span className="skill-word" style={{ "--skill-index": index } as CSSProperties}>{children}</span>;
+}
+
+export function About() {
+  const skillsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const node = ref.current;
-    if (!node) return;
+    const root = skillsRef.current;
+    if (!root) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          node.classList.add("is-visible");
+          root.classList.add("is-visible");
           observer.disconnect();
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.2, rootMargin: "0px 0px -8% 0px" }
     );
-    observer.observe(node);
+    observer.observe(root);
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div className="skill-words" ref={ref}>
-      {items.map((skill, index) => (
-        <span key={skill} style={{ "--word-delay": `${index * 55}ms` } as CSSProperties}>{skill}</span>
-      ))}
-    </div>
-  );
-}
-
-export function About() {
-  return (
     <section className="about" id="about">
       <div className="container">
-        <div className="about-header">
-          <div>
-            <p className="eyebrow about-eyebrow">À propos</p>
-            <h2>Une vision créative.<br />Une énergie collective.<br />Un impact qui compte.</h2>
+        <div className="about-hero">
+          <div className="about-hero-copy">
+            <h2>Une vision créative.<br /><em>Une énergie collective.</em><br />Un impact qui compte.</h2>
           </div>
-          <p className="about-header-lead">Je relie stratégie, créativité, expérience client et performance pour transformer une vision en projets qui créent de la valeur.</p>
+          <div className="about-hero-visual" aria-hidden="true">
+            <span className="about-orb orb-a" />
+            <span className="about-orb orb-b" />
+            <span className="about-orb orb-c" />
+            <span className="about-word word-1">CRÉATIVITÉ</span>
+            <span className="about-word word-2">ONE TEAM</span>
+            <span className="about-word word-3">IMPACT</span>
+            <span className="about-hero-core">+</span>
+          </div>
         </div>
 
-        <div className="about-manifesto-compact">
-          <span>Le bon concept attire.</span>
-          <span>Le bon collectif l’exécute.</span>
-          <span>Les bons KPI permettent de l’améliorer.</span>
+        <div className="about-manifesto">
+          <p>Je relie stratégie, créativité, expérience client et performance pour transformer une vision en projets qui créent de la valeur.</p>
+          <span>Le bon concept attire. Le bon collectif l’exécute. Les bons KPI permettent de l’améliorer.</span>
         </div>
 
-        <div className="about-principles" aria-label="Domaines d’expertise">
-          {principles.map(([title, text], index) => (
-            <article className="about-principle" key={title}>
+        <div className="about-principles">
+          {principles.map(([title, detail], index) => (
+            <article className="about-principle-card" key={title}>
               <span className="principle-index">0{index + 1}</span>
-              <div>
-                <strong>{title}</strong>
-                <span>{text}</span>
-              </div>
+              <div className="principle-icon" aria-hidden="true">↗</div>
+              <h3>{title}</h3>
+              <p>{detail}</p>
             </article>
           ))}
         </div>
 
-        <div className="skills-modern">
-          <div className="skills-modern-heading">
-            <p className="eyebrow">Ce que j’apporte</p>
-            <p>Des compétences métier solides, combinées à une manière de travailler qui fait avancer les projets.</p>
+        <div className="about-body">
+          <div className="about-story">
+            <p className="eyebrow">Ma façon de travailler</p>
+            <p className="about-lead">J’aime passer de l’idée au terrain, faire travailler les expertises ensemble et garder une lecture simple : <em>pourquoi, pour qui, avec quel impact ?</em></p>
+            <p className="about-secondary">Mon parcours entre divertissement, automobile et univers premium m’a appris à conjuguer exigence créative, expérience client et réalité opérationnelle. Je crois aux équipes qui avancent en <strong>One Team</strong>, avec un cap clair, de la confiance et l’envie de faire mieux ensemble.</p>
           </div>
 
-          <div className="skills-modern-list">
-            <section className="skills-modern-row">
-              <div className="skills-modern-label"><span>01</span><strong>Hard skills</strong></div>
-              <RevealWords items={hardSkills} />
-            </section>
-            <section className="skills-modern-row">
-              <div className="skills-modern-label"><span>02</span><strong>Soft skills</strong></div>
-              <RevealWords items={softSkills} />
-            </section>
+          <div className="skills-panel" ref={skillsRef}>
+            <div className="skills-block">
+              <p className="eyebrow">Hard skills</p>
+              <div className="skills-cloud" aria-label="Hard skills">
+                {hardSkills.map((skill, index) => <SkillWord key={skill} index={index}>{skill}</SkillWord>)}
+              </div>
+            </div>
+            <div className="skills-block">
+              <p className="eyebrow">Soft skills</p>
+              <div className="skills-cloud" aria-label="Soft skills">
+                {softSkills.map((skill, index) => <SkillWord key={skill} index={index}>{skill}</SkillWord>)}
+              </div>
+            </div>
           </div>
         </div>
       </div>

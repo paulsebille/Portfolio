@@ -14,8 +14,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" className={GeistSans.variable}>
-      <body>
+    <html lang="fr">
+      <body className={GeistSans.className}>
         <SiteHeader />
         {children}
         <SiteFooter />

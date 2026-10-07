@@ -7,7 +7,7 @@ export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 28);
+    const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -20,9 +20,9 @@ export function SiteHeader() {
           <strong>Paul Sebille</strong>
         </Link>
         <nav className="nav" aria-label="Navigation principale">
-          <Link href="/#work"><span>01</span>Projets</Link>
-          <Link href="/#about"><span>02</span>À propos</Link>
-          <Link href="/#contact"><span>03</span>Contact</Link>
+          <Link href="/#work"><span className="nav-index">01</span><span>Projets</span></Link>
+          <Link href="/#about"><span className="nav-index">02</span><span>À propos</span></Link>
+          <Link href="/#contact"><span className="nav-index">03</span><span>Contact</span></Link>
         </nav>
       </div>
     </header>
