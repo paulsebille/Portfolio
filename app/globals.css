@@ -2424,3 +2424,59 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .site-header .nav-index,
   .site-header .nav-label { transition: none; }
 }
+
+
+/* Center each principle title, then lift it as its full-width detail unfolds */
+.about-principle-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 0;
+  min-height: 58px;
+  padding: 0 14px;
+}
+.about-principle-number {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: top .45s var(--ease), transform .45s var(--ease);
+}
+.about-principle-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  transition: transform .55s var(--ease);
+}
+.about-principle-detail {
+  display: block;
+  flex: 0 0 auto;
+  grid-column: auto;
+  width: 100%;
+  max-height: 0;
+  margin: 0;
+  padding: 0 14px;
+  text-align: center;
+}
+.about-principle-row:hover .about-principle-number {
+  top: 14px;
+  transform: none;
+}
+.about-principle-row:hover .about-principle-title {
+  transform: translateY(-4px);
+}
+.about-principle-row:hover .about-principle-detail {
+  max-height: 140px;
+  margin-top: 7px;
+  padding: 9px 14px 11px;
+}
+@media (max-width:560px) {
+  .about-principle-row { min-height: 48px; padding-inline: 9px; }
+  .about-principle-number { left: 8px; }
+  .about-principle-row:hover .about-principle-detail {
+    max-height: 180px;
+    padding-inline: 10px;
+  }
+}
