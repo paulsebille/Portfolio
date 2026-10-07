@@ -2231,3 +2231,67 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media (max-width:560px) {
   .skills-card-head .skills-editorial-title { font-size: 17px; }
 }
+
+
+/* Refined navigation typography and motion */
+.site-header .logo,
+.site-header .nav,
+.site-header .nav a {
+  font-family: inherit;
+}
+.site-header .nav {
+  gap: clamp(24px, 3vw, 40px);
+  font-size: 15px;
+  font-weight: 540;
+  letter-spacing: -.035em;
+}
+.site-header .nav a {
+  position: relative;
+  padding: 10px 0;
+  opacity: .88;
+  transition: opacity .35s ease, transform .55s var(--ease), color .35s ease;
+  animation: headerNavReveal .85s var(--ease) both;
+}
+.site-header .nav a:nth-child(1) { animation-delay: .2s; }
+.site-header .nav a:nth-child(2) { animation-delay: .3s; }
+.site-header .nav a:nth-child(3) { animation-delay: .4s; }
+.site-header .nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  height: 1px;
+  background: currentColor;
+  opacity: .75;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .55s var(--ease);
+}
+.site-header .nav a:hover,
+.site-header.is-scrolled .nav a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.site-header .nav a:hover::after,
+.site-header .nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+.site-header .nav a:focus-visible {
+  outline: none;
+}
+@keyframes headerNavReveal {
+  from { opacity: 0; transform: translateY(9px); filter: blur(4px); }
+  to { opacity: .88; transform: translateY(0); filter: blur(0); }
+}
+@media (max-width:900px) {
+  .site-header .nav { gap: 24px; font-size: 14px; }
+}
+@media (max-width:560px) {
+  .site-header .nav { gap: 16px; font-size: 12px; letter-spacing: -.02em; }
+  .site-header .nav a { padding: 8px 0; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .site-header .nav a { animation: none; transition: none; }
+  .site-header .nav a::after { transition: none; }
+}
