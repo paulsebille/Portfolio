@@ -2802,3 +2802,27 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* Match the contact CTA to the rounded skills-chip silhouette */
 .footer-cta { border-radius: 999px; }
+
+
+/* Keep header typography crisp and stable while scrolling */
+.site-header,
+.site-header.is-scrolled {
+  mix-blend-mode: normal;
+  transform: none;
+  background: rgba(20, 36, 30, .97);
+  color: #f8f7f3;
+  border-bottom-color: rgba(255,255,255,.1);
+  text-shadow: none;
+  -webkit-text-stroke: 0 transparent;
+  backdrop-filter: blur(18px) saturate(115%);
+  transition: border-color .35s ease;
+}
+.site-header .logo,
+.site-header .nav,
+.site-header .nav a {
+  text-shadow: none;
+  -webkit-text-stroke: 0 transparent;
+  filter: none;
+}
+.site-header.is-scrolled .nav a { opacity: .9; }
+.site-header.is-scrolled .nav a:hover { opacity: 1; }
