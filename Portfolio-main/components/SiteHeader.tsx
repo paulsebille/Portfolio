@@ -20,9 +20,9 @@ export function SiteHeader() {
           <strong>Paul Sebille</strong>
         </Link>
         <nav className="nav" aria-label="Navigation principale">
-          <Link href="/#work"><span className="nav-index">01</span><span>Projets</span></Link>
-          <Link href="/#about"><span className="nav-index">02</span><span>À propos</span></Link>
-          <Link href="/#contact"><span className="nav-index">03</span><span>Contact</span></Link>
+          <Link href="/#work">Projets</Link>
+          <Link href="/#about">À propos</Link>
+          <Link href="/#contact">Contact</Link>
         </nav>
       </div>
     </header>
