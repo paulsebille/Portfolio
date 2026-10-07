@@ -2295,3 +2295,38 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .site-header .nav a { animation: none; transition: none; }
   .site-header .nav a::after { transition: none; }
 }
+
+
+/* Let principle descriptions expand in the layout instead of overlaying it */
+.about-principle-row {
+  display: grid;
+  grid-template-columns: 27px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  align-content: start;
+  align-items: center;
+}
+.about-principle-detail {
+  position: static;
+  grid-column: 1 / -1;
+  width: auto;
+  max-height: 0;
+  margin: 0;
+  padding: 0 13px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: max-height .45s var(--ease), margin .35s var(--ease), padding .35s var(--ease),
+    opacity .25s ease, transform .35s var(--ease), visibility .25s ease;
+}
+.about-principle-row:hover .about-principle-detail {
+  max-height: 140px;
+  margin-top: 8px;
+  padding: 11px 13px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+@media (max-width:560px) {
+  .about-principle-row:hover .about-principle-detail { max-height: 180px; }
+}
