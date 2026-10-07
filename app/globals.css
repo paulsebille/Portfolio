@@ -2724,3 +2724,15 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .footer-cta,
   .footer-cta i { transition: none; }
 }
+
+
+.footer-cta i svg {
+  display: block;
+  width: 23px;
+  height: 23px;
+  overflow: visible;
+  stroke: currentColor;
+  stroke-width: 1.45;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
