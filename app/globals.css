@@ -2654,3 +2654,36 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     padding: 12px 14px 14px;
   }
 }
+
+
+/* Separate expanded principle legends from the title and its index */
+.about-principle-row:hover {
+  justify-content: flex-start;
+  padding-top: 17px;
+  padding-bottom: 14px;
+}
+.about-principle-row:hover .about-principle-number {
+  top: 17px;
+}
+.about-principle-row:hover .about-principle-title {
+  transform: translateY(-2px);
+}
+.about-principle-row:hover .about-principle-detail {
+  max-height: 210px;
+  margin-top: 15px;
+  padding: 18px 22px 20px;
+}
+@media (max-width:560px) {
+  .about-principle-row:hover {
+    padding-top: 14px;
+    padding-bottom: 11px;
+  }
+  .about-principle-row:hover .about-principle-number {
+    top: 14px;
+  }
+  .about-principle-row:hover .about-principle-detail {
+    max-height: 240px;
+    margin-top: 13px;
+    padding: 15px 14px 17px;
+  }
+}
