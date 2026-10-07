@@ -1306,3 +1306,160 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .carousel-image-f1 { object-position: center 35%; }
 .about-hero-copy h2 { font-family: inherit; }
 .about-hero-copy h2 span { display:block; }
+
+/* ===== SCROLL REVEAL: ABOUT ===== */
+.about-principles-editorial {
+  margin-top: 54px;
+  border-top: 1px solid var(--line);
+}
+.about-principle-row {
+  display: grid;
+  grid-template-columns: 70px minmax(150px,.65fr) minmax(0,1.35fr) 28px;
+  align-items: center;
+  gap: 24px;
+  min-height: 82px;
+  padding: 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  transition: opacity .8s var(--ease), transform .8s var(--ease), padding .45s var(--ease), background .4s ease;
+}
+.about-principle-row:not(.is-visible) {
+  opacity: .18;
+  transform: translateY(18px);
+}
+.about-principle-row.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.about-principle-row:hover {
+  padding-inline: 14px;
+  background: rgba(17,16,15,.025);
+}
+.about-principle-number {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+.about-principle-title {
+  font-size: 16px;
+  font-weight: 540;
+  letter-spacing: -.025em;
+}
+.about-principle-detail {
+  max-width: 600px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.about-principle-arrow {
+  justify-self: end;
+  color: var(--muted);
+  font-size: 20px;
+  font-weight: 300;
+  transition: transform .45s var(--ease), color .3s ease;
+}
+.about-principle-row:hover .about-principle-arrow {
+  color: var(--ink);
+  transform: translate(4px,-3px);
+}
+
+.about-skills {
+  margin-top: 86px;
+  display: grid;
+  grid-template-columns: minmax(0,.7fr) minmax(0,1.3fr);
+  gap: clamp(45px,8vw,120px);
+  align-items: start;
+}
+.about-skills-intro .eyebrow { margin: 0 0 10px; }
+.about-skills-intro p:last-child {
+  max-width: 280px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.skills-reveal-stack {
+  display: grid;
+  gap: 46px;
+}
+.skills-block-reveal {
+  transition: opacity 1s var(--ease), transform 1s var(--ease);
+}
+.skills-block-reveal:not(.is-visible) {
+  opacity: .08;
+  transform: translateY(30px);
+}
+.skills-block-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.skills-block-reveal .eyebrow {
+  margin: 0 0 16px;
+}
+.skill-pills-editorial {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.skill-pills-editorial span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #44413c;
+  background: rgba(255,255,255,.28);
+  font-size: 10px;
+  letter-spacing: -.01em;
+  transition: transform .4s var(--ease), background .35s ease, border-color .35s ease;
+}
+.skill-pills-editorial span:hover {
+  transform: translateY(-3px);
+  background: var(--surface);
+  border-color: rgba(17,16,15,.28);
+}
+.skill-pills-editorial span:nth-child(2) { transition-delay: .04s; }
+.skill-pills-editorial span:nth-child(3) { transition-delay: .08s; }
+.skill-pills-editorial span:nth-child(4) { transition-delay: .12s; }
+.skill-pills-editorial span:nth-child(5) { transition-delay: .16s; }
+.skill-pills-editorial span:nth-child(6) { transition-delay: .2s; }
+
+@media (max-width:900px) {
+  .about-principle-row {
+    grid-template-columns: 42px 1fr 24px;
+    gap: 14px;
+    min-height: 76px;
+  }
+  .about-principle-detail { grid-column: 2 / 3; grid-row: 2; padding-bottom: 20px; }
+  .about-principle-row { grid-template-rows: 52px auto; }
+  .about-skills {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 64px;
+  }
+}
+@media (max-width:560px) {
+  .about-principles-editorial { margin-top: 38px; }
+  .about-principle-row {
+    grid-template-columns: 34px 1fr 20px;
+    min-height: 68px;
+    gap: 10px;
+  }
+  .about-principle-title { font-size: 15px; }
+  .about-principle-detail { font-size: 11px; }
+  .about-skills { margin-top: 58px; }
+  .skills-reveal-stack { gap: 38px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-principle-row,
+  .skills-block-reveal,
+  .skill-pills-editorial span {
+    transition: none !important;
+    transform: none !important;
+  }
+  .about-principle-row:not(.is-visible),
+  .skills-block-reveal:not(.is-visible) {
+    opacity: 1;
+  }
+}
