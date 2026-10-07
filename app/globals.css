@@ -2736,3 +2736,61 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+
+/* Match project exploration to the outlined contact invitation */
+.hero-scroll {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(28px, 4vw, 54px);
+  margin-top: 32px;
+  padding: 15px 19px;
+  border: 1px solid rgba(255,255,255,.72);
+  border-radius: 16px;
+  color: #f8f7f3;
+  font-family: var(--display-font, inherit);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -.015em;
+  text-transform: none;
+  transition: border-color .45s ease, transform .55s var(--ease), box-shadow .45s ease;
+}
+.hero-scroll-circle {
+  display: grid;
+  place-items: center;
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  background: transparent;
+  transition: transform .55s var(--ease), opacity .35s ease;
+}
+.hero-scroll-circle svg {
+  display: block;
+  width: 21px;
+  height: 21px;
+  overflow: visible;
+  stroke: currentColor;
+  stroke-width: 1.45;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.hero-scroll:hover {
+  border-color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.12);
+}
+.hero-scroll:hover .hero-scroll-circle {
+  background: transparent;
+  color: inherit;
+  transform: translateY(3px);
+}
+@media (max-width:560px) {
+  .hero-scroll { margin-top: 25px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll,
+  .hero-scroll-circle { transition: none; }
+}
