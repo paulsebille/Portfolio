@@ -2826,3 +2826,44 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 }
 .site-header.is-scrolled .nav a { opacity: .9; }
 .site-header.is-scrolled .nav a:hover { opacity: 1; }
+
+
+/* Shared premium CTA finish: framed rounded rectangles and restrained response */
+.hero-scroll,
+.footer-cta {
+  border-radius: 17px;
+  padding: 15px 20px;
+  background: rgba(255,255,255,.015);
+  box-shadow: none;
+  transform: none;
+  transition: background-color .45s ease, border-color .45s ease, color .45s ease;
+}
+.hero-scroll:hover,
+.footer-cta:hover {
+  border-color: rgba(255,255,255,.96);
+  background: rgba(255,255,255,.055);
+  box-shadow: none;
+  transform: none;
+}
+.hero-scroll-circle,
+.footer-cta i {
+  transition: transform .65s var(--ease), opacity .4s ease;
+}
+.hero-scroll-circle svg,
+.footer-cta i svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.55;
+}
+.hero-scroll:hover .hero-scroll-circle { transform: translateY(3px); }
+.footer-cta:hover i { transform: translateX(3px); }
+.hero-scroll:focus-visible {
+  outline: 2px solid rgba(255,255,255,.8);
+  outline-offset: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll,
+  .footer-cta,
+  .hero-scroll-circle,
+  .footer-cta i { transition: none; }
+}
