@@ -80,11 +80,20 @@ export function About() {
 
         <div className="about-lower">
           <article className="about-work-card">
-            <div className="about-team-visual" aria-hidden="true">
-              <span className="team-art-mark">✳</span>
-              <i className="team-orbit-dot dot-one" />
-              <i className="team-orbit-dot dot-two" />
-              <i className="team-orbit-dot dot-three" />
+            <div className="about-team-visual">
+              <svg className="team-support-illustration" viewBox="0 0 600 520" role="img" aria-label="Trois personnes réunies, qui avancent et se soutiennent en équipe">
+                <ellipse cx="300" cy="447" rx="185" ry="16" fill="#8d785d" opacity=".10" />
+                <circle cx="300" cy="226" r="174" fill="none" stroke="#8d785d" strokeOpacity=".13" />
+                <path d="M132 419c4-68 30-117 76-133 24-8 48 1 68 21" fill="none" stroke="#ad9879" strokeWidth="39" strokeLinecap="round" />
+                <path d="M468 419c-4-68-30-117-76-133-24-8-48 1-68 21" fill="none" stroke="#ad9879" strokeWidth="39" strokeLinecap="round" />
+                <path d="M172 292c20 55 66 76 119 73m137-73c-20 55-66 76-119 73" fill="none" stroke="#8d785d" strokeWidth="13" strokeLinecap="round" />
+                <path d="M226 425c4-89 31-143 74-143s70 54 74 143" fill="#c9b595" />
+                <path d="M263 297c-17 25-26 55-28 90m102-90c17 25 26 55 28 90" fill="none" stroke="#8d785d" strokeWidth="12" strokeLinecap="round" />
+                <circle cx="300" cy="224" r="32" fill="#9d8666" />
+                <circle cx="208" cy="252" r="25" fill="#c1ad8e" />
+                <circle cx="392" cy="252" r="25" fill="#c1ad8e" />
+                <path d="M300 153v-18m-116 54-13-12m245 12 13-12" stroke="#9d8666" strokeWidth="3" strokeLinecap="round" opacity=".65" />
+              </svg>
             </div>
             <div className="about-work-copy">
               <p className="eyebrow">Ma façon de travailler</p>
