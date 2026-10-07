@@ -36,9 +36,9 @@ export function SiteHeader() {
           <strong>Paul Sebille</strong>
         </Link>
         <nav className="nav" aria-label="Navigation principale">
-          <Link href="/#work" aria-label="Projets"><span className="nav-label">Projets</span><span className="nav-index" aria-hidden="true">01</span></Link>
-          <Link href="/#about" aria-label="À propos"><span className="nav-label">À propos</span><span className="nav-index" aria-hidden="true">02</span></Link>
-          <Link href="/#contact" aria-label="Contact"><span className="nav-label">Contact</span><span className="nav-index" aria-hidden="true">03</span></Link>
+          <Link href="/#work">Projets</Link>
+          <Link href="/#about">À propos</Link>
+          <Link href="/#contact">Contact</Link>
         </nav>
       </div>
     </header>
