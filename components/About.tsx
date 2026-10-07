@@ -40,21 +40,19 @@ export function About() {
     <section className="about" id="about">
       <div className="container">
         <div className="about-hero">
+          <div className="about-flow" aria-hidden="true">
+            <span className="flow-line" />
+            <span className="flow-node flow-node-1"><i>01</i><b>Stratégie</b></span>
+            <span className="flow-node flow-node-2"><i>02</i><b>Créativité</b></span>
+            <span className="flow-node flow-node-3"><i>03</i><b>One Team</b></span>
+            <span className="flow-node flow-node-4"><i>04</i><b>Impact</b></span>
+          </div>
           <div className="about-hero-copy">
             <h2>
               <span><strong>Une vision créative.</strong></span>
               <span><strong>Une énergie collective.</strong></span>
               <span><em>Un impact qui compte.</em></span>
             </h2>
-          </div>
-          <div className="about-hero-visual" aria-hidden="true">
-            <span className="about-orb orb-a" />
-            <span className="about-orb orb-b" />
-            <span className="about-orb orb-c" />
-            <span className="about-word word-1">CRÉATIVITÉ</span>
-            <span className="about-word word-2">ONE TEAM</span>
-            <span className="about-word word-3">IMPACT</span>
-            <span className="about-hero-core">+</span>
           </div>
         </div>
 
