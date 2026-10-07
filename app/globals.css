@@ -2537,3 +2537,16 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   box-shadow: 0 12px 32px rgba(45,35,23,.13);
 }
 .site-header .nav-index { display: none !important; }
+
+
+/* Match navigation case and scale to the wordmark */
+.site-header .nav {
+  font-size: 23px;
+  text-transform: none;
+}
+@media (max-width:900px) {
+  .site-header .nav { font-size: 20px; }
+}
+@media (max-width:560px) {
+  .site-header .nav { font-size: 18px; }
+}
