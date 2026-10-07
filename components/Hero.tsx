@@ -41,7 +41,7 @@ export function Hero() {
             </div>
             <Link href="#work" className="hero-scroll">
               <span>Explorer les projets</span>
-              <span className="hero-scroll-circle">↓</span>
+              <span className="hero-scroll-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M12 4v15m-6-6 6 6 6-6" /></svg></span>
             </Link>
           </div>
 
