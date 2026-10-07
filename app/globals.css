@@ -2550,3 +2550,8 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media (max-width:560px) {
   .site-header .nav { font-size: 18px; }
 }
+
+
+/* Preserve the champagne hover hue and blend the portrait into its background */
+.site-header { mix-blend-mode: normal; }
+.hero-portrait { border: 0; }
