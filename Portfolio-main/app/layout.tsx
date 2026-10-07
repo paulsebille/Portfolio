@@ -6,8 +6,8 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 const geist = Geist({
   subsets: ["latin"],
-  variable: "--font-geist",
   display: "swap",
+  variable: "--font-geist",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr" className={geist.variable}>
-      <body>
+      <body className={geist.className}>
         <SiteHeader />
         {children}
         <SiteFooter />
