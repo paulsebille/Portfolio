@@ -2794,3 +2794,7 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .hero-scroll,
   .hero-scroll-circle { transition: none; }
 }
+
+
+/* Pill-shaped CTA, matching the skills chips */
+.hero-scroll { border-radius: 999px; }
