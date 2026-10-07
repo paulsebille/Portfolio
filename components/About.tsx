@@ -14,8 +14,11 @@ export function About() {
       <div className="container">
         <div className="about-hero">
           <div className="about-hero-copy">
-            <h2>Une vision créative.<br /><em>Une énergie collective. Un impact qui compte.</em></h2>
-            <p className="about-hero-line">Créer. Fédérer. Mesurer. Faire avancer.</p>
+            <h2>
+              <span>Une vision créative.</span>
+              <span>Une énergie collective.</span>
+              <span>Un impact qui compte.</span>
+            </h2>
           </div>
           <div className="about-hero-visual" aria-hidden="true">
             <span className="about-orb orb-a" />
