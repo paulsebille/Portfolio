@@ -2221,3 +2221,13 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media (max-width:560px) {
   .team-support-illustration { width: min(100%, 310px); height: 175px; }
 }
+
+
+/* Keep the skills headline on one line beside the work-card title */
+.skills-card-head .skills-editorial-title {
+  font-size: clamp(18px, 2.5vw, 32px);
+  white-space: nowrap;
+}
+@media (max-width:560px) {
+  .skills-card-head .skills-editorial-title { font-size: 17px; }
+}
