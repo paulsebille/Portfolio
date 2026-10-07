@@ -1049,3 +1049,10 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .about-principles { margin-top:34px; }
   .about-principle { min-height:95px; }
 }
+
+
+/* Slightly enlarge the top-left wordmark */
+.site-header .logo strong { font-size: 18px; }
+@media (max-width:560px) {
+  .site-header .logo strong { font-size: 16px; }
+}
