@@ -40,12 +40,18 @@ export function About() {
     <section className="about" id="about">
       <div className="container">
         <div className="about-hero">
-          <div className="about-flow" aria-hidden="true">
-            <span className="flow-line" />
-            <span className="flow-node flow-node-1"><i>01</i><b>Stratégie</b></span>
-            <span className="flow-node flow-node-2"><i>02</i><b>Créativité</b></span>
-            <span className="flow-node flow-node-3"><i>03</i><b>One Team</b></span>
-            <span className="flow-node flow-node-4"><i>04</i><b>Impact</b></span>
+          <div className="about-creative-visual" aria-hidden="true">
+            <span className="creative-ring ring-one" />
+            <span className="creative-ring ring-two" />
+            <span className="creative-ring ring-three" />
+            <span className="creative-orbit orbit-one" />
+            <span className="creative-orbit orbit-two" />
+            <span className="creative-spark spark-one">✦</span>
+            <span className="creative-spark spark-two">✦</span>
+            <span className="creative-core">+</span>
+            <span className="creative-label label-one">IDEA</span>
+            <span className="creative-label label-two">EXPERIENCE</span>
+            <span className="creative-label label-three">IMPACT</span>
           </div>
           <div className="about-hero-copy">
             <h2>
@@ -72,33 +78,41 @@ export function About() {
           ))}
         </div>
 
-        <div className="about-body">
-          <div className="about-story">
-            <p className="eyebrow">Ma façon de travailler</p>
-            <p className="about-lead">J’aime passer de l’idée au terrain, faire travailler les expertises ensemble et garder une lecture simple : <em>pourquoi, pour qui, avec quel impact ?</em></p>
-            <p className="about-secondary">Mon parcours entre divertissement, automobile et univers premium m’a appris à conjuguer exigence créative, expérience client et réalité opérationnelle. Je crois aux équipes qui avancent en <strong>One Team</strong>, avec un cap clair, de la confiance et l’envie de faire mieux ensemble.</p>
-          </div>
-        </div>
+        <div className="about-lower">
+          <article className="about-work-card">
+            <div className="about-team-visual" aria-hidden="true">
+              <span>ONE TEAM</span>
+              <i>+</i>
+              <b>IDEAS → TERRAIN</b>
+            </div>
+            <div className="about-work-copy">
+              <p className="eyebrow">Ma façon de travailler</p>
+              <h3>De l’idée au terrain.</h3>
+              <p>Je fais travailler les expertises ensemble avec une lecture simple : <em>pourquoi, pour qui, avec quel impact ?</em></p>
+              <small>Divertissement · Automobile · Premium</small>
+            </div>
+          </article>
 
-        <div className="about-skills">
-          <div className="about-skills-intro">
-            <p className="eyebrow">Compétences</p>
-            <p>Des outils pour produire, des qualités pour faire avancer les projets.</p>
-          </div>
-          <div className="skills-reveal-stack">
-            <Reveal className="skills-block-reveal">
-              <p className="eyebrow">Hard skills</p>
-              <div className="skill-pills-editorial">
-                {hardSkills.map(skill => <span key={skill}>{skill}</span>)}
-              </div>
-            </Reveal>
-            <Reveal className="skills-block-reveal">
-              <p className="eyebrow">Soft skills</p>
-              <div className="skill-pills-editorial">
-                {softSkills.map(skill => <span key={skill}>{skill}</span>)}
-              </div>
-            </Reveal>
-          </div>
+          <article className="about-skills-card">
+            <div className="skills-card-head">
+              <p className="eyebrow">Compétences</p>
+              <span>Ce qui me permet de faire avancer les projets.</span>
+            </div>
+            <div className="skills-showcase">
+              <Reveal className="skills-showcase-group">
+                <div className="skills-showcase-title"><span>✦</span><strong>Hard skills</strong></div>
+                <div className="skill-pills-editorial">
+                  {hardSkills.map(skill => <span key={skill}>{skill}</span>)}
+                </div>
+              </Reveal>
+              <Reveal className="skills-showcase-group">
+                <div className="skills-showcase-title"><span>◌</span><strong>Soft skills</strong></div>
+                <div className="skill-pills-editorial">
+                  {softSkills.map(skill => <span key={skill}>{skill}</span>)}
+                </div>
+              </Reveal>
+            </div>
+          </article>
         </div>
       </div>
     </section>
