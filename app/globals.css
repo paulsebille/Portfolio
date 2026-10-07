@@ -2601,3 +2601,30 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   background: transparent;
   box-shadow: none;
 }
+
+
+/* Restore the original header tint and reduce nav prominence */
+.site-header {
+  mix-blend-mode: difference;
+  background: rgba(243,241,236,.82);
+  color: var(--ink);
+  border-bottom-color: rgba(17,16,15,.07);
+  backdrop-filter: blur(18px) saturate(120%);
+}
+.site-header.is-scrolled {
+  background: rgba(243,241,236,.82);
+  color: var(--ink);
+  border-bottom-color: var(--line);
+}
+.site-header .nav { font-size: 17px; font-weight: 500; }
+.site-header .nav a:hover,
+.site-header.is-scrolled .nav a:hover {
+  transform: translateY(-1px);
+  letter-spacing: inherit;
+}
+@media (max-width:900px) {
+  .site-header .nav { font-size: 15px; }
+}
+@media (max-width:560px) {
+  .site-header .nav { font-size: 14px; }
+}
