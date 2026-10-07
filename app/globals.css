@@ -2144,3 +2144,59 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .skills-card-head { display: block; }
   .skills-card-head > span { display: block; margin-top: 8px; text-align: left; }
 }
+
+
+/* About refinement */
+.about-creative-visual .creative-core {
+  width: auto; height: auto; left: 49%; top: 43%; border-radius: 0;
+  background: transparent; color: rgba(17,16,15,.75); font-size: 34px;
+  font-weight: 400; box-shadow: none; text-shadow: 0 8px 28px rgba(17,16,15,.12);
+}
+.about-principle-row:nth-child(1) { background: #f3eee5; }
+.about-principle-row:nth-child(2) { background: #f5f0e9; }
+.about-principle-row:nth-child(3) { background: #eee9df; }
+.about-principle-row:nth-child(4) { background: #f2eee7; }
+.about-principle-row:nth-child(1):hover,
+.about-principle-row:nth-child(2):hover,
+.about-principle-row:nth-child(3):hover,
+.about-principle-row:nth-child(4):hover { background: #e9e1d4; }
+.about-team-visual {
+  isolation: isolate;
+  background: radial-gradient(ellipse at 50% 52%, rgba(255,255,255,.9), transparent 28%),
+    radial-gradient(ellipse at 22% 20%, rgba(201,184,158,.28), transparent 35%),
+    linear-gradient(145deg, #e7dfd2 0%, #f5f1e9 54%, #d9cfbf 100%);
+}
+.about-team-visual::before {
+  width: 154px; height: 154px; left: 50%; top: 50%; transform: translate(-50%,-50%);
+  border: 1px solid rgba(86,72,54,.18);
+  box-shadow: -55px 18px 0 -50px rgba(76,64,48,.7), 55px 18px 0 -50px rgba(76,64,48,.7),
+    0 -52px 0 -50px rgba(76,64,48,.65);
+}
+.about-team-visual .team-art-mark {
+  position: absolute; left: 50%; top: 50%; z-index: 2; transform: translate(-50%,-50%);
+  color: rgba(85,70,51,.72); font-size: 28px; line-height: 1;
+}
+.about-team-visual .team-orbit-dot {
+  position: absolute; z-index: 2; width: 7px; height: 7px;
+  border: 1px solid rgba(85,70,51,.35); border-radius: 50%; background: #eee7dc;
+}
+.about-team-visual .dot-one { left: 31%; top: 34%; }
+.about-team-visual .dot-two { right: 27%; top: 38%; }
+.about-team-visual .dot-three { left: 48%; bottom: 24%; }
+.about-work-copy .about-one-team {
+  margin-top: 16px; color: #756a5b; font-size: 11px; font-weight: 550;
+  letter-spacing: .04em; text-transform: none;
+}
+.skills-card-head { display: block; padding-bottom: 22px; }
+.skills-card-head .eyebrow { margin: 0 0 18px; }
+.skills-card-head .skills-editorial-title {
+  display: block; color: var(--white); font-size: clamp(30px, 3.2vw, 43px);
+  font-weight: 540; letter-spacing: -.055em; line-height: .98;
+}
+.skills-showcase-title strong { font-size: 14px; }
+.about-skills-card .skill-pills-editorial span { font-size: 11px; }
+@media (max-width:560px) {
+  .about-creative-visual .creative-core { left: 49%; top: 43%; font-size: 28px; }
+  .about-team-visual::before { width: 118px; height: 118px; }
+  .skills-card-head .skills-editorial-title { font-size: 34px; }
+}
