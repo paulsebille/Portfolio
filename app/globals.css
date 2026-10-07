@@ -1463,3 +1463,75 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     opacity: 1;
   }
 }
+
+
+/* ===== ABOUT COMPACT PASS ===== */
+.about { padding-top: 78px; padding-bottom: 104px; }
+.about-hero {
+  gap: clamp(32px, 5vw, 72px);
+}
+.about-hero-copy h2 {
+  font-size: clamp(43px, 5.35vw, 76px);
+  line-height: .91;
+}
+.about-hero-copy h2 strong {
+  font-weight: 650;
+}
+.about-hero-copy h2 em {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.about-hero-visual {
+  min-height: 230px;
+  border-radius: 26px;
+}
+.about-hero-core {
+  width: 54px;
+  height: 54px;
+  font-size: 23px;
+}
+.about-manifesto {
+  margin-top: 48px;
+  max-width: 780px;
+}
+.about-manifesto p {
+  font-size: clamp(24px, 2.65vw, 38px);
+}
+.about-manifesto span {
+  margin-top: 12px;
+  font-size: 12px;
+}
+.about-principles-editorial {
+  margin-top: 30px;
+}
+.about-principle-row {
+  min-height: 68px;
+}
+.about-body {
+  margin-top: 52px;
+}
+.about-lead {
+  font-size: clamp(23px, 2.35vw, 34px);
+}
+.about-secondary {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.58;
+}
+.about-skills {
+  margin-top: 58px;
+  gap: clamp(35px, 6vw, 80px);
+}
+.skills-reveal-stack {
+  gap: 34px;
+}
+@media (max-width: 560px) {
+  .about { padding-top: 64px; padding-bottom: 82px; }
+  .about-hero-copy h2 { font-size: 43px; }
+  .about-hero-visual { min-height: 190px; border-radius: 22px; }
+  .about-manifesto { margin-top: 38px; }
+  .about-principles-editorial { margin-top: 24px; }
+  .about-body { margin-top: 42px; }
+  .about-skills { margin-top: 48px; }
+}
