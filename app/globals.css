@@ -2570,3 +2570,24 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media (max-width:560px) {
   .site-header .nav { font-size: 15px; }
 }
+
+
+/* Keep the deep green header; reserve champagne for the hovered link */
+.site-header,
+.site-header.is-scrolled {
+  background: rgba(20, 36, 30, .96);
+  color: #f8f7f3;
+  border-bottom-color: rgba(255,255,255,.09);
+  backdrop-filter: blur(18px) saturate(115%);
+}
+.site-header.is-scrolled .nav a { opacity: .9; }
+.site-header.is-scrolled .nav a:hover { opacity: 1; }
+.site-header .nav a::before {
+  background: linear-gradient(135deg, #f0e7d8, #ddc9a8);
+}
+.site-header .nav a:hover,
+.site-header.is-scrolled .nav a:hover,
+.site-header .nav a:focus-visible,
+.site-header.is-scrolled .nav a:focus-visible {
+  color: #30271d;
+}
