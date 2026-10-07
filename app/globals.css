@@ -2867,3 +2867,13 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .hero-scroll-circle,
   .footer-cta i { transition: none; }
 }
+
+
+/* Match the projects introduction to the hero body copy */
+.projects-lead {
+  font-size: 14px;
+  letter-spacing: -.015em;
+}
+@media (max-width:560px) {
+  .projects-lead { font-size: 14px; }
+}
