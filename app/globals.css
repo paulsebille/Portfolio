@@ -2512,3 +2512,28 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .site-header .nav { gap: 4px; font-size: 14px; letter-spacing: -.025em; }
   .site-header .nav a { min-height: 40px; padding: 9px 7px; }
 }
+
+
+/* Warm champagne hover for the header links */
+.site-header .nav a {
+  color: inherit;
+  transition: color .4s ease, transform .6s var(--ease), opacity .3s ease;
+}
+.site-header .nav a::before {
+  border-color: rgba(205,183,150,0);
+  background: linear-gradient(135deg, rgba(239,229,211,.96), rgba(214,195,164,.96));
+  box-shadow: 0 10px 28px rgba(45,35,23,.1);
+}
+.site-header .nav a:hover,
+.site-header .nav a:focus-visible,
+.site-header.is-scrolled .nav a:hover,
+.site-header.is-scrolled .nav a:focus-visible {
+  color: #30271d;
+}
+.site-header .nav a:hover::before,
+.site-header .nav a:focus-visible::before {
+  border-color: rgba(170,145,108,.24);
+  background: linear-gradient(135deg, #f0e7d8, #ddc9a8);
+  box-shadow: 0 12px 32px rgba(45,35,23,.13);
+}
+.site-header .nav-index { display: none !important; }
