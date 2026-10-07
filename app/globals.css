@@ -2591,3 +2591,13 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .site-header.is-scrolled .nav a:focus-visible {
   color: #30271d;
 }
+
+
+/* Remove the remaining gray portrait halo while preserving its crop */
+.hero-portrait-glow { display: none; }
+.hero-portrait {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  box-shadow: none;
+}
