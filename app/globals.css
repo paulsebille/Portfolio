@@ -2628,3 +2628,8 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media (max-width:560px) {
   .site-header .nav { font-size: 14px; }
 }
+
+/* Final nav sizing */
+.site-header .nav { font-size: 16px; }
+@media (max-width:900px) { .site-header .nav { font-size: 15px; } }
+@media (max-width:560px) { .site-header .nav { font-size: 14px; } }
