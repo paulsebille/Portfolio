@@ -3411,6 +3411,8 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 }
 .project-detail-back:hover { color: var(--ink); gap: 13px; }
 .project-detail-back span {
+  position: relative;
+  top: -2px;
   font-size: 23px;
   font-weight: 300;
   line-height: .8;
