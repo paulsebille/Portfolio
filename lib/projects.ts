@@ -98,7 +98,7 @@ export const projects: Project[] = [
       { value: "20", label: "clients ultra-VIP au Grand Prix" }
     ],
     heroImage: "/images/audi-f1-p1597797.jpg",
-    gallery: ["/images/audi-f1-red.jpg", "/images/audi-f1-closeup.webp", "/images/audi-f1-visitors.webp", "/images/audi-f1-showcar.webp", "/images/audi-f1-r26-reveal.webp", "/images/audi-f1-front.webp", "/images/audi-f1-event.webp"],
+    gallery: ["/images/audi-f1-closeup.webp", "/images/audi-f1-visitors.webp", "/images/audi-f1-showcar.webp", "/images/audi-f1-r26-reveal.webp", "/images/audi-f1-front.webp", "/images/audi-f1-event.webp"],
     visualLabel: "AUDI F1"
   },
   {
