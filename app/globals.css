@@ -4166,14 +4166,18 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     height: 36px;
     margin-bottom: 0;
   }
-  .hero-scroll,
   .footer-cta {
     min-height: 44px;
     padding: 9px 15px;
   }
+  .hero-scroll {
+    min-height: 40px;
+    padding: 6px 14px;
+    font-weight: 520;
+  }
   .hero-scroll-circle {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
 }
 
