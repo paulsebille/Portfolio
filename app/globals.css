@@ -3865,3 +3865,49 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .projects-section-subtitle { font-size: 14px; line-height: 1.65; }
   .projects-section-subtitle span { margin-top: 12px; font-size: 19px; }
 }
+
+
+/* Modern, frameless treatment for the projects subtitle */
+.projects-section-subtitle {
+  max-width: 500px;
+  margin: 0 0 3px;
+  padding: 0;
+  border: 0;
+  color: #625b50;
+  font-size: clamp(13px,1.02vw,15px);
+  line-height: 1.72;
+  letter-spacing: -.012em;
+}
+.projects-section-subtitle span {
+  position: relative;
+  display: block;
+  max-width: 450px;
+  margin-top: 17px;
+  padding-left: 19px;
+  color: #252720;
+  font-family: inherit;
+  font-size: clamp(18px,1.65vw,23px);
+  font-style: normal;
+  font-weight: 560;
+  line-height: 1.28;
+  letter-spacing: -.04em;
+}
+.projects-section-subtitle span::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: .47em;
+  width: 7px;
+  height: 7px;
+  border-radius: 1px;
+  background: #a58f6c;
+  transform: rotate(45deg);
+}
+@media (max-width: 640px) {
+  .projects-section-subtitle { font-size: 14px; line-height: 1.65; }
+  .projects-section-subtitle span {
+    margin-top: 13px;
+    padding-left: 17px;
+    font-size: 18px;
+  }
+}
