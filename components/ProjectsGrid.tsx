@@ -76,8 +76,8 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
           <h2>Des idées qui prennent vie.<br /><em>Des projets qui créent de l’impact.</em></h2>
         </div>
         <aside className="projects-intro-card" aria-label="L’ambition des projets">
-          <span className="projects-intro-label">Une même ambition</span>
-          <p className="projects-lead">Découvrez une sélection de campagnes, lancements, partenariats et expériences entre divertissement, automobile et univers premium — toujours avec la même ambition : transformer une idée en expérience et en impact business.</p>
+          <p className="projects-lead">Découvrez une sélection de campagnes, lancements, partenariats et expériences entre divertissement, automobile et univers premium.</p>
+          <p className="projects-lead-emphasis">Transformer une idée en expérience et en impact business.</p>
         </aside>
       </div>
 
