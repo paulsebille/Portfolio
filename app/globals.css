@@ -4543,3 +4543,15 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     grid-column: auto;
   }
 }
+
+
+/* Show the full-width Disney+ artwork without cropping its side logos */
+.project-detail-disney-plus .project-detail-hero-image {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #071331;
+}
+.project-detail-disney-plus .project-detail-hero-image img {
+  object-fit: contain;
+  object-position: center;
+}
