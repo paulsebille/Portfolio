@@ -55,9 +55,9 @@ export function About() {
           </div>
           <div className="about-hero-copy">
             <h2>
-              <span><strong>Je donne un cap au marketing.</strong></span>
-              <span><strong>Je fédère les équipes.</strong></span>
-              <span><em>Je transforme la vision en résultats.</em></span>
+              <span><strong>Donner un cap au marketing.</strong></span>
+              <span><strong>Fédérer les équipes.</strong></span>
+              <span><em>Transformer la vision en résultats.</em></span>
             </h2>
           </div>
         </div>
