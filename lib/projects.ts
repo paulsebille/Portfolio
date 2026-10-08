@@ -121,7 +121,7 @@ export const projects: Project[] = [
       { value: "+100", label: "influenceurs accompagnés" },
       { value: "5", label: "ID. Buzz mobilisés" },
       { value: "+100K", label: "impressions sociales" },
-      { value: "≈4,5%", label: "taux d’engagement", note: "Estimation" }
+      { value: "≈4,5%", label: "taux d’engagement" }
     ],
     heroImage: "/images/kenzo-hero.jpg",
     gallery: ["/images/kenzo-two-idbuzz.webp", "/images/kenzo-idbuzz-sea.webp", "/images/kenzo-palais-wide.webp", "/images/kenzo-brand-detail.webp", "/images/kenzo-yellow-idbuzz.webp"],
