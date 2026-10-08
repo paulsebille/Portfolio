@@ -102,7 +102,7 @@ export const projects: Project[] = [
   {
     slug: "kenzo-volkswagen-id-buzz",
     brand: "KENZO × VOLKSWAGEN",
-    title: "Une expérience sensorielle entre parfum, design et mobilité",
+    title: "Faire vivre une expérience entre parfum, design et mobilité",
     year: "2024",
     intro:
       "Une collaboration tripartite entre KENZO Parfums, Win-Win et Volkswagen pour accompagner une activation influence au Palais Bulles sur la Côte d’Azur.",
