@@ -4130,8 +4130,8 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     top: 0;
     right: -27vw;
     z-index: 1;
-    width: min(70vw, 270px);
-    height: clamp(340px, 112vw, 430px);
+    width: min(67vw, 260px);
+    height: clamp(326px, 108vw, 414px);
     margin: 0;
     opacity: 1;
     pointer-events: none;
