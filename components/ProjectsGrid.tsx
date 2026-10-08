@@ -37,18 +37,22 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
     const updateActiveCard = () => {
       window.cancelAnimationFrame(frame);
       frame = window.requestAnimationFrame(() => {
+        const atStart = track.scrollLeft <= 2;
+        const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
         const trackCenter = track.getBoundingClientRect().left + track.clientWidth / 2;
-        let nearestIndex = 0;
-        let nearestDistance = Number.POSITIVE_INFINITY;
+        let nearestIndex = atEnd ? cards.length - 1 : 0;
+        let nearestDistance = atStart || atEnd ? -1 : Number.POSITIVE_INFINITY;
 
-        cards.forEach((card, index) => {
-          const rect = card.getBoundingClientRect();
-          const distance = Math.abs(rect.left + rect.width / 2 - trackCenter);
-          if (distance < nearestDistance) {
-            nearestDistance = distance;
-            nearestIndex = index;
-          }
-        });
+        if (!atStart && !atEnd) {
+          cards.forEach((card, index) => {
+            const rect = card.getBoundingClientRect();
+            const distance = Math.abs(rect.left + rect.width / 2 - trackCenter);
+            if (distance < nearestDistance) {
+              nearestDistance = distance;
+              nearestIndex = index;
+            }
+          });
+        }
 
         setActive((current) => current === nearestIndex ? current : nearestIndex);
       });
