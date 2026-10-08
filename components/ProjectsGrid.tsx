@@ -75,10 +75,11 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
         <div className="work-heading-title">
           <h2>Des idées qui prennent vie.<br /><em>Des projets qui créent de l’impact.</em></h2>
         </div>
-          <p className="projects-section-subtitle">
-            <span className="projects-subtitle-context">Découvrez une sélection de campagnes, lancements, partenariats et expériences dans le divertissement, l’automobile et le premium.</span>
-            <strong>Transformer une idée en expérience.<br />Et en impact business.</strong>
-          </p>
+          <div className="projects-section-subtitle" aria-label="Les projets et leur ambition">
+            <p className="projects-subtitle-context">Campagnes · lancements · partenariats · expériences</p>
+            <p className="projects-subtitle-worlds">Divertissement · automobile · premium</p>
+            <p className="projects-subtitle-promise">Transformer une idée en expérience.<br /><span>Et en impact business.</span></p>
+          </div>
       </div>
 
       <div className="carousel-shell">
