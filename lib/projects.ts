@@ -167,10 +167,10 @@ export const projects: Project[] = [
     description:
       "L’objectif : profiter de la puissance d’un événement culturel majeur de la Côte d’Azur pour faire émerger la nouvelle CUPRA RAVAL, créer du contact avec le public et transformer cette visibilité en opportunités commerciales. L’enjeu était double : donner une forte visibilité à la nouveauté tout en créant un dispositif capable de générer du business.",
     approach: [
-      { title: "Présence", text: "Création d’un corner CUPRA × Sixt avec la RAVAL au centre du dispositif, un néon signature et un jeu de lumière inspiré de l’identité du festival." },
-      { title: "Découverte produit", text: "Roue de la fortune digitale, lots et présence de l’équipe commerciale et d’hôtes pour engager les visiteurs et créer des conversations autour de la RAVAL." },
-      { title: "VIP", text: "Invitation de clients et prospects CUPRA pour renforcer la fidélisation et créer une découverte privilégiée du nouveau modèle." },
-      { title: "Amplification", text: "Production de contenus photo et vidéo et relais social pour prolonger l’expérience au-delà du site du festival." }
+      { title: "Création d’un corner", text: "Création d’un corner CUPRA × Sixt avec la RAVAL au centre du dispositif, un néon signature et un jeu de lumière inspiré de l’identité du festival." },
+      { title: "Animations live", text: "Roue de la fortune digitale, lots et présence de l’équipe commerciale et d’hôtes pour engager les visiteurs et créer des conversations autour de la RAVAL." },
+      { title: "Expérience VIP", text: "Invitation de clients et prospects CUPRA pour renforcer la fidélisation et créer une découverte privilégiée du nouveau modèle." },
+      { title: "Relai social media", text: "Production de contenus photo et vidéo et relais social pour prolonger l’expérience au-delà du site du festival." }
     ],
     results: [
       { value: "+50K", label: "participants" },
