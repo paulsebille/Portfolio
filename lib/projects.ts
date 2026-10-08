@@ -96,7 +96,7 @@ export const projects: Project[] = [
       { value: "×3", label: "fréquentation en concession" },
       { value: "20", label: "clients ultra-VIP au Grand Prix" }
     ],
-    heroImage: "/images/audi-f1-hero.jpg",
+    heroImage: "/images/audi-f1-p1597797.jpg",
     gallery: ["/images/audi-f1-red.jpg", "/images/audi-f1-vip.jpg", "/images/audi-f1-car.jpg"],
     visualLabel: "AUDI F1"
   },
