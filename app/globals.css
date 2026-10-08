@@ -4360,3 +4360,20 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   font-weight: 560;
   letter-spacing: -.075em;
 }
+
+
+/* Use the same Georgia italic as “d’être imaginée” for project subheads */
+.project-brief-title,
+.project-results-section .project-section-heading h2,
+.project-approach-heading h2,
+.project-gallery-heading h2,
+.project-detail-eyebrow {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.project-section-heading h2 em {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
