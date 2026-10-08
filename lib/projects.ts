@@ -84,9 +84,9 @@ export const projects: Project[] = [
     description:
       "À l’occasion de l’arrivée d’Audi en Formule 1, j’ai imaginé une activation en deux temps pour faire émerger ce nouveau territoire de marque auprès de nos clients et de notre communauté locale. Une première expérience à Audi Mougins, puis son prolongement au Grand Prix de Monaco pour faire découvrir, faire vivre et faire prolonger l’univers F1.",
     approach: [
-      { title: "Night Edition", text: "Le 28 mai 2026, révélation de l’Audi R26 Showcar à Audi Mougins dans une scénographie immersive : lumière, musique, cocktail, animations et collaborations locales." },
-      { title: "Grand Prix de Monaco", text: "Une journée exclusive pour 20 clients ultra-VIP avec brunch festif et expérience privilégiée au cœur du Grand Prix." },
-      { title: "Hospitalité", text: "Créer une expérience client premium autour d’un territoire de marque inédit pour Audi et prolonger la relation au-delà de la concession." },
+      { title: "Organisation de la Night Edition", text: "Le 28 mai 2026, révélation de l’Audi R26 Showcar à Audi Mougins dans une scénographie immersive : lumière, musique, cocktail, animations et collaborations locales." },
+      { title: "Coordination du Grand Prix de Monaco", text: "Une journée exclusive pour 20 clients ultra-VIP avec brunch festif et expérience privilégiée au cœur du Grand Prix." },
+      { title: "Gestion des hospitalités", text: "Créer une expérience client premium autour d’un territoire de marque inédit pour Audi et prolonger la relation au-delà de la concession." },
       { title: "Relai social media", text: "Produire des contenus photo et vidéo et relayer les temps forts sur les réseaux sociaux pour prolonger l’expérience." }
     ],
     results: [
