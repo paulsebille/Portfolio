@@ -96,7 +96,7 @@ export function About() {
             <div className="about-work-copy">
               <p className="eyebrow">Ma façon de travailler</p>
               <h3>De l’idée au terrain.</h3>
-              <p>Je fais travailler les expertises ensemble avec une lecture simple : <em>pourquoi, pour qui, avec quel impact ?</em></p>
+              <p>Je fais travailler les expertises ensemble avec une lecture simple : pourquoi, pour qui, avec quel impact ?</p>
               <small className="about-one-team">#OneTeam</small>
             </div>
           </article>
