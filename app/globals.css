@@ -4605,3 +4605,13 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     height: min(120vw, 480px);
   }
 }
+
+
+/* Keep each project disclosure at its own height when a neighbour opens */
+.project-approach-grid {
+  align-items: start;
+}
+.project-approach-card {
+  align-self: start;
+  width: 100%;
+}
