@@ -133,7 +133,7 @@ export const projects: Project[] = [
     title: "Faire d’un film un événement planétaire",
     year: "2019",
     intro:
-      "Pour accompagner la sortie française du Roi Lion, un dispositif mêlant relations presse, voyages presse, influence, événementiel, création de contenus et animation digitale.",
+      "Pour accompagner la sortie française du Roi Lion, j’ai contribué à une stratégie de lancement mêlant voyages médias, influence, événementiel, création de contenus et animation digitale.",
     role: "Marketing & Relations Presse",
     categories: ["Relations presse", "Influence", "Événementiel", "Digital"],
     description:
