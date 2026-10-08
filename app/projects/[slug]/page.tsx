@@ -39,10 +39,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         <div className="project-brief-copy">
           <h2 id="project-brief-title" className="project-brief-title">En bref</h2>
           <p className="project-brief-text">{project.intro}</p>
-          <div className="project-detail-meta">
-            <div><span>Mon rôle</span><strong>{project.role}</strong></div>
-            <div><span>Expertises</span><strong>{project.categories.slice(0, 3).join(" · ")}</strong></div>
-          </div>
         </div>
       </section>
 
@@ -52,7 +48,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             <div>
               <h2 id="project-results-title">Les chiffres clés</h2>
             </div>
-            <p>Des indicateurs concrets pour mesurer la portée de l’expérience.</p>
           </div>
           <div className="project-results-grid">
             {project.results.map((result) => (
@@ -91,22 +86,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         <section className="project-gallery-section container">
           <div className="project-gallery-heading project-section-heading">
             <div>
-              <p className="project-detail-eyebrow">Galerie</p>
               <h2>Moments forts <em>en images.</em></h2>
             </div>
-            <p>Un aperçu de l’expérience, sur le terrain.</p>
           </div>
           <ProjectGalleryCarousel title={project.title} images={gallery} />
         </section>
       )}
 
-      <section className="project-detail-closing container">
-        <div>
-          <p className="project-detail-eyebrow">La suite</p>
-          <h2>Un projet à <em>imaginer ?</em></h2>
-        </div>
-        <Link href="/#contact" className="project-detail-contact">Écrivons la suite <span aria-hidden="true">↗</span></Link>
-      </section>
     </main>
   );
 }
