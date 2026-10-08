@@ -185,7 +185,7 @@ export const projects: Project[] = [
   {
     slug: "e-kardashian",
     brand: "E! ENTERTAINMENT",
-    title: "Faire d’une série culte un événement influence",
+    title: "Mettre l’univers Kardashian en scène, au-delà de l’écran",
     year: "2019",
     intro:
       "Une activation dédiée à L’Incroyable Famille Kardashian, mêlant relations presse, influence, événementiel et contenus digitaux pour prolonger l’univers de la série au-delà de l’écran.",
