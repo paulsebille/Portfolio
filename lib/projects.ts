@@ -57,7 +57,6 @@ export const projects: Project[] = [
       "Après un lancement initialement prévu le 24 mars, la plateforme est finalement déployée le 7 avril dans un contexte exceptionnel. De son lancement aux campagnes consacrées aux sorties de Toy Story 4, Le Roi Lion, La Reine des Neiges 2, Star Wars : L’Ascension de Skywalker ou encore Mulan, j’ai participé à la mise en œuvre de prises de parole mêlant contenus digitaux, réseaux sociaux, influence, événementiel et analyse des retombées.",
     approach: [
       { title: "Lancement", text: "Accompagner l’arrivée de Disney+ en France avec une communication adaptée à un contexte inédit et une plateforme riche de centaines de contenus." },
-      { title: "Contenus", text: "Gestion de bandes-annonces, affiches, contenus éditoriaux et publications destinées aux réseaux sociaux." },
       { title: "Franchises", text: "Accompagnement des grandes sorties et temps forts autour de Toy Story 4, Le Roi Lion, La Reine des Neiges 2, Star Wars IX et Mulan." },
       { title: "Mesure", text: "Analyse des retombées digitales et de l’e-réputation : reach, engagement, PR Value et reporting." },
       { title: "Expérience", text: "Organisation d’événements VIP et influenceurs ainsi que d’activations liées aux sorties de films." }
