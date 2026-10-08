@@ -16,7 +16,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const gallery = project.gallery?.length ? project.gallery : project.heroImage ? [project.heroImage] : [];
 
   return (
-    <main className="project-page project-detail">
+    <main className={`project-page project-detail project-detail-${project.slug}`}>
       <section className="project-detail-intro container">
         <div className="project-detail-topline">
           <Link href="/#work" className="project-detail-back"><span aria-hidden="true">←</span> Tous les projets</Link>
