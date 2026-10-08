@@ -147,9 +147,9 @@ export const projects: Project[] = [
     results: [
       { value: "630K", label: "spectateurs en France au 1er jour" },
       { value: "2,56M", label: "spectateurs en 5 jours" },
-      { value: "9,5M", label: "spectateurs en France", note: "Septembre 2019" },
+      { value: "10M", label: "spectateurs en France" },
       { value: "6M+", label: "vues sur la bande-annonce VF officielle" },
-      { value: "$1,6B+", label: "box-office mondial", note: "Contexte film" }
+      { value: "$1,6B+", label: "box-office mondial" }
     ],
     heroImage: "/images/roi-lion-hero.jpg",
     gallery: ["/images/roi-lion-hero.jpg"],
