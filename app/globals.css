@@ -3297,3 +3297,47 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .carousel-buttons button,
   .carousel-buttons button svg { transition: none; }
 }
+
+
+/* Remove the leftover line treatment around the project chevron */
+.project-card-arrow,
+.project-card-arrow::before,
+.project-card-arrow::after {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.project-card-arrow::before,
+.project-card-arrow::after {
+  content: none !important;
+  display: none !important;
+}
+.project-card-arrow {
+  transition: opacity .5s ease;
+}
+.project-card-arrow svg {
+  transition: transform .8s var(--ease);
+}
+.project-card:hover .project-card-arrow svg {
+  transform: translateX(4px);
+}
+
+/* Keep progress marks fixed in place as the active slide changes */
+.carousel-progress-track {
+  gap: 6px;
+}
+.carousel-progress-track span {
+  flex: 0 0 10px;
+  width: 10px;
+  min-width: 10px;
+  height: 3px;
+  transition: background-color .3s ease, opacity .3s ease;
+  opacity: .5;
+}
+.carousel-progress-track span.is-active {
+  flex: 0 0 10px;
+  height: 3px;
+  background: #171614;
+  opacity: 1;
+}
