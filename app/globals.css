@@ -2922,3 +2922,34 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     font-size: 13px;
   }
 }
+
+
+/* Light, capsule-shaped project CTA with a restrained premium hover */
+.hero-scroll {
+  border: 1px solid rgba(17,16,15,.62);
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  color: #11100f;
+  transition: background-color .45s ease, border-color .45s ease;
+}
+.hero-scroll:hover {
+  border-color: #11100f;
+  background: rgba(218,208,191,.28);
+  color: #11100f;
+}
+.hero-scroll-circle {
+  color: #11100f;
+  opacity: .78;
+  transition: color .45s ease, opacity .45s ease, transform .7s var(--ease);
+}
+.hero-scroll-circle svg {
+  stroke: currentColor;
+}
+.hero-scroll:hover .hero-scroll-circle {
+  color: #11100f;
+  opacity: 1;
+  transform: translateY(3px);
+}
+.hero-scroll:focus-visible {
+  outline-color: rgba(17,16,15,.65);
+}
