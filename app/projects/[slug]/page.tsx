@@ -65,8 +65,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         <section className="project-approach-section container">
           <div className="project-section-heading project-approach-heading">
             <div>
-              <p className="project-detail-eyebrow">Le dispositif</p>
-              <h2>De l’idée à <em>l’expérience.</em></h2>
+              <h2>Le dispositif</h2>
             </div>
             <p>{project.description}</p>
           </div>
