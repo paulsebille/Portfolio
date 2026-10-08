@@ -4299,3 +4299,43 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   }
   .project-gallery-track.is-single .project-gallery-slide { flex-basis: 100%; }
 }
+
+
+/* Match project page titles to the homepage typography */
+.project-detail-heading h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.project-brief-title,
+.project-results-section .project-section-heading h2,
+.project-approach-heading h2,
+.project-gallery-heading h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(24px, 3.1vw, 36px);
+  font-style: italic;
+  font-weight: 450;
+  line-height: 1.04;
+  letter-spacing: -.045em;
+}
+.project-section-heading h2 em {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+.project-detail-eyebrow {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(17px, 1.7vw, 21px);
+  font-style: italic;
+  font-weight: 430;
+  letter-spacing: -.025em;
+  text-transform: none;
+  margin-bottom: 8px;
+}
+@media (max-width: 640px) {
+  .project-brief-title,
+  .project-results-section .project-section-heading h2,
+  .project-approach-heading h2,
+  .project-gallery-heading h2 {
+    font-size: 24px;
+  }
+  .project-detail-eyebrow { font-size: 17px; }
+}
