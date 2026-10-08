@@ -58,7 +58,7 @@ export const projects: Project[] = [
     approach: [
       { title: "Gestion du lancement", text: "Accompagner l’arrivée de Disney+ en France avec une communication adaptée à un contexte inédit et une plateforme riche de centaines de contenus." },
       { title: "Suivi des franchises", text: "Accompagnement des grandes sorties et temps forts autour de Toy Story 4, Le Roi Lion, La Reine des Neiges 2, Star Wars IX et Mulan." },
-      { title: "Mesure des KPI", text: "Analyse des retombées digitales et de l’e-réputation : reach, engagement, PR Value et reporting." },
+      { title: "Mesure des KPI’s", text: "Analyse des retombées digitales et de l’e-réputation : reach, engagement, PR Value et reporting." },
       { title: "Création d’expériences", text: "Organisation d’événements VIP et influenceurs ainsi que d’activations liées aux sorties de films." }
     ],
     results: [
