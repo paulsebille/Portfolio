@@ -152,7 +152,7 @@ export const projects: Project[] = [
       { value: "$1,6B+", label: "box-office mondial" }
     ],
     heroImage: "/images/roi-lion-hero.jpg",
-    gallery: ["/images/roi-lion-hero.jpg"],
+    gallery: ["/images/roi-lion-simba-cub.webp", "/images/roi-lion-simba-zazu.webp", "/images/roi-lion-pride.webp"],
     visualLabel: "LE ROI LION"
   },
   {
