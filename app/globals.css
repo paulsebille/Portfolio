@@ -4615,3 +4615,14 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   align-self: start;
   width: 100%;
 }
+
+
+/* On mobile, show Disney+ KPI measurement after experience creation */
+@media (max-width: 640px) {
+  .project-detail-disney-plus .project-approach-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-detail-disney-plus .project-approach-card:nth-child(3) { order: 4; }
+  .project-detail-disney-plus .project-approach-card:nth-child(4) { order: 3; }
+}
