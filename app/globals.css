@@ -3786,3 +3786,10 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     transition: none !important;
   }
 }
+
+
+/* Correct the Audi F1 crop: reveal more of the lower source area */
+.carousel-image-f1 { object-position: center 76%; }
+.project-detail-audi-f1-experience .project-detail-hero-image img {
+  object-position: center 76%;
+}
