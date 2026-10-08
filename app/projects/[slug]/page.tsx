@@ -70,11 +70,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             <p>{project.description}</p>
           </div>
           <div className="project-approach-grid">
-            {project.approach.slice(0, 4).map((item) => (
-              <article className="project-approach-card" key={item.title}>
-                <h3>{item.title}</h3>
+            {project.approach.map((item) => (
+              <details className="project-approach-card" key={item.title}>
+                <summary>
+                  <span>{item.title}</span>
+                  <span className="project-approach-toggle" aria-hidden="true" />
+                </summary>
                 <p>{item.text}</p>
-              </article>
+              </details>
             ))}
           </div>
         </section>
