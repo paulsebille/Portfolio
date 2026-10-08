@@ -2953,3 +2953,51 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .hero-scroll:focus-visible {
   outline-color: rgba(17,16,15,.65);
 }
+
+
+/* Match the contact CTA to the project capsule, in white */
+.footer-cta {
+  min-height: 56px;
+  gap: clamp(30px, 3.5vw, 42px);
+  padding: 16px 22px;
+  border: 1px solid rgba(255,255,255,.82);
+  border-radius: 999px;
+  background: transparent;
+  color: #f8f7f3;
+  font-size: 14px;
+  font-weight: 520;
+  letter-spacing: -.02em;
+  box-shadow: none;
+  transform: none;
+  transition: background-color .45s ease, border-color .45s ease, color .45s ease;
+}
+.footer-cta:hover {
+  border-color: #fff;
+  background: rgba(218,208,191,.16);
+  color: #fff;
+  box-shadow: none;
+  transform: none;
+}
+.footer-cta i {
+  opacity: .78;
+  transition: opacity .45s ease, transform .7s var(--ease);
+}
+.footer-cta i svg {
+  width: 21px;
+  height: 21px;
+  stroke-width: 1.5;
+}
+.footer-cta:hover i {
+  opacity: 1;
+  transform: translateX(3px);
+}
+@media (max-width:560px) {
+  .footer-cta {
+    min-height: 52px;
+    padding: 14px 18px;
+    font-size: 13px;
+  }
+}
+.footer-cta:focus-visible {
+  outline-color: rgba(255,255,255,.8);
+}
