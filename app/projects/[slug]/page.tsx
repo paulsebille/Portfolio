@@ -37,7 +37,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       <section className="project-brief-section container" aria-labelledby="project-brief-title">
         <div className="project-brief-copy">
-          <p className="project-detail-eyebrow">En bref</p>
           <h2 id="project-brief-title" className="project-brief-title">En bref</h2>
           <p className="project-brief-text">{project.intro}</p>
           <div className="project-detail-meta">
@@ -56,7 +55,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             <p>Des indicateurs concrets pour mesurer la portée de l’expérience.</p>
           </div>
           <div className="project-results-grid">
-            {project.results.map((result, index) => (
+            {project.results.map((result) => (
               <article className="project-result-card" key={`${result.value}-${result.label}`}>
                 
                 <strong>{result.value}</strong>
@@ -78,7 +77,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             <p>{project.description}</p>
           </div>
           <div className="project-approach-grid">
-            {project.approach.slice(0, 4).map((item, index) => (
+            {project.approach.slice(0, 4).map((item) => (
               <article className="project-approach-card" key={item.title}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
