@@ -3374,3 +3374,12 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* Raise the Audi F1 framing within its carousel card */
 .carousel-image-f1 { object-position: center 18%; }
+
+
+/* Tighten the transition from the project carousel into About */
+.work { padding-bottom: 42px; }
+.about { padding-top: 48px; }
+@media (max-width: 560px) {
+  .work { padding-bottom: 32px; }
+  .about { padding-top: 40px; }
+}
