@@ -46,9 +46,9 @@ export function About() {
             <span className="creative-ring ring-three" />
             <span className="creative-orbit orbit-one" />
             <span className="creative-orbit orbit-two" />
-            <span className="creative-spark spark-one">✦</span>
-            <span className="creative-spark spark-two">✦</span>
-            <span className="creative-core" aria-label="Étincelle créative">✳</span>
+            <span className="creative-spark spark-one"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.8 9.2 22.5 12l-7.7 2.8L12 22.5l-2.8-7.7L1.5 12l7.7-2.8L12 1.5Z" /></svg></span>
+            <span className="creative-spark spark-two"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.8 9.2 22.5 12l-7.7 2.8L12 22.5l-2.8-7.7L1.5 12l7.7-2.8L12 1.5Z" /></svg></span>
+            <span className="creative-core" aria-label="Étincelle créative"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.1 8.1 20.2 3.8 17.1 10.1 23.5 12l-6.4 1.9 3.1 6.3-6.1-4.3L12 22.5l-2.1-6.6-6.1 4.3 3.1-6.3L.5 12l6.4-1.9L3.8 3.8l6.1 4.3L12 1.5Z" /></svg></span>
             <span className="creative-label label-two">EXPÉRIENCE</span>
             <span className="creative-label label-three">IMPACT</span>
           </div>
