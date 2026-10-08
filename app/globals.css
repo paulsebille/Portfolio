@@ -2223,13 +2223,13 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 }
 
 
-/* Keep the skills headline on one line beside the work-card title */
+/* Match the skills headline size to the work-card title */
 .skills-card-head .skills-editorial-title {
-  font-size: clamp(18px, 2.5vw, 32px);
-  white-space: nowrap;
+  font-size: clamp(30px, 3vw, 43px);
+  white-space: normal;
 }
 @media (max-width:560px) {
-  .skills-card-head .skills-editorial-title { font-size: 17px; }
+  .skills-card-head .skills-editorial-title { font-size: 30px; }
 }
 
 
