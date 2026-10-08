@@ -55,16 +55,16 @@ export function About() {
           </div>
           <div className="about-hero-copy">
             <h2>
-              <span><strong>J’imagine des expériences.</strong></span>
-              <span><strong>J’embarque les équipes.</strong></span>
-              <span><em>Je fais avancer les projets.</em></span>
+              <span><strong>Je donne un cap au marketing.</strong></span>
+              <span><strong>Je fédère les équipes.</strong></span>
+              <span><em>Je transforme la vision en résultats.</em></span>
             </h2>
           </div>
         </div>
 
         <div className="about-manifesto">
-          <p>Je pars des objectifs de la marque, imagine une expérience juste, fédère les bonnes expertises et pilote chaque étape jusqu’aux résultats.</p>
-          <span>Ma démarche s’appuie sur quatre leviers : stratégie, créativité, One Team et performance.</span>
+          <p>Je définis les priorités, aligne les expertises et donne à chaque projet les conditions pour avancer — de la stratégie au terrain, jusqu’à la mesure des résultats.</p>
+          <span>Stratégie, créativité, One Team, performance : quatre leviers qui structurent ma démarche.</span>
         </div>
 
         <div className="about-principles-editorial">
