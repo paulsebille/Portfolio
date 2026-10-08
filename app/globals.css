@@ -3001,3 +3001,10 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .footer-cta:focus-visible {
   outline-color: rgba(255,255,255,.8);
 }
+
+
+/* Keep the contact capsule fixed while only its chevron responds */
+.footer-cta:hover {
+  gap: clamp(30px, 3.5vw, 42px);
+  transform: none;
+}
