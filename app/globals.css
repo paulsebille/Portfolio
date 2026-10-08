@@ -4377,3 +4377,10 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   font-style: inherit;
   font-weight: inherit;
 }
+
+
+/* Bring the shared black footer closer to project galleries */
+.project-page.project-detail { padding-bottom: 32px; }
+@media (max-width: 640px) {
+  .project-page.project-detail { padding-bottom: 20px; }
+}
