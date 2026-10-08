@@ -4668,3 +4668,43 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     text-shadow: 0 1px 16px rgba(0,0,0,.22);
   }
 }
+
+
+/* Editorial header refinement */
+.site-header .header-inner {
+  height: 74px;
+  transition: height .4s ease;
+}
+.site-header.is-scrolled .header-inner {
+  height: 68px;
+}
+.site-header .logo strong {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -.06em;
+}
+.site-header .nav {
+  gap: clamp(24px, 3vw, 38px);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -.03em;
+}
+.site-header .nav a,
+.site-header.is-scrolled .nav a {
+  transition: opacity .3s ease, color .3s ease;
+}
+.site-header .nav a:hover,
+.site-header.is-scrolled .nav a:hover {
+  transform: none;
+}
+@media (max-width: 640px) {
+  .site-header .header-inner,
+  .site-header.is-scrolled .header-inner {
+    height: 66px;
+  }
+  .site-header .logo strong { font-size: 17px; }
+  .site-header .nav {
+    gap: 14px;
+    font-size: 13px;
+  }
+}
