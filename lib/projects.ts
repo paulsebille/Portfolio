@@ -202,7 +202,7 @@ export const projects: Project[] = [
     ],
     results: [],
     heroImage: "/images/kardashian-hero.jpg",
-    gallery: ["/images/kardashian-hero.jpg"],
+    gallery: ["/images/kardashian-cast.webp"],
     visualLabel: "E!"
   }
 ];

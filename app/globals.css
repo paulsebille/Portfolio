@@ -3410,7 +3410,23 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   transition: color .3s ease, gap .4s var(--ease);
 }
 .project-detail-back:hover { color: var(--ink); gap: 13px; }
-.project-detail-back span { font-size: 17px; line-height: 1; }
+.project-detail-back span {
+  font-size: 23px;
+  font-weight: 300;
+  line-height: .8;
+  transition: transform .3s ease;
+}
+.project-detail-back:hover span { transform: translateX(-3px); }
+
+/* Keep the Kardashian cast artwork fully visible in the project gallery */
+.project-detail-e-kardashian .project-gallery-slide {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #eadcae;
+}
+.project-detail-e-kardashian .project-gallery-slide img {
+  object-fit: contain !important;
+}
 .project-detail-kicker {
   display: inline-flex;
   align-items: center;

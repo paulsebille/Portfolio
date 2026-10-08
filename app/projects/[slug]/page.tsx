@@ -19,7 +19,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     <main className={`project-page project-detail project-detail-${project.slug}`}>
       <section className="project-detail-intro container">
         <div className="project-detail-topline">
-          <Link href="/#work" className="project-detail-back"><span aria-hidden="true">←</span> Tous les projets</Link>
+          <Link href="/#work" className="project-detail-back"><span aria-hidden="true">‹</span> Tous les projets</Link>
           <span className="project-detail-kicker">{project.brand}<i />{project.year}</span>
         </div>
         <div className={`project-detail-hero-layout${project.heroImage ? " has-image" : ""}`}>
