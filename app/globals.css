@@ -4345,3 +4345,18 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   }
   .project-detail-eyebrow { font-size: 17px; }
 }
+
+
+/* Use the site's Geist display typography on project pages */
+.project-detail-heading h1,
+.project-brief-title,
+.project-results-section .project-section-heading h2,
+.project-approach-heading h2,
+.project-gallery-heading h2,
+.project-detail-eyebrow {
+  font-family: inherit;
+}
+.project-detail-heading h1 {
+  font-weight: 560;
+  letter-spacing: -.075em;
+}
