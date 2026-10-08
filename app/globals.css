@@ -4401,3 +4401,79 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media (max-width: 640px) {
   .site-footer { padding-top: 60px; }
 }
+
+
+/* Expandable, restrained cards for the project operation details */
+.project-approach-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  border-top: 0;
+}
+.project-approach-card {
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(17,16,15,.10);
+  border-radius: 17px;
+  background: rgba(255,255,255,.48);
+  transition: background-color .3s ease, border-color .3s ease;
+}
+.project-approach-card:hover,
+.project-approach-card[open] {
+  border-color: rgba(141,120,93,.34);
+  background: #f3f0e9;
+}
+.project-approach-card > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 15px 17px;
+  cursor: pointer;
+  list-style: none;
+}
+.project-approach-card > summary::-webkit-details-marker { display: none; }
+.project-approach-card > summary::marker { content: ""; }
+.project-approach-card > summary > span:first-child {
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: -.02em;
+  font-weight: 550;
+}
+.project-approach-toggle {
+  display: grid;
+  flex: 0 0 28px;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(17,16,15,.18);
+  border-radius: 50%;
+  color: #61594c;
+}
+.project-approach-toggle::before {
+  content: "+";
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform .3s ease;
+}
+.project-approach-card[open] .project-approach-toggle::before { transform: rotate(45deg); }
+.project-approach-card > p {
+  max-width: none;
+  margin: 0;
+  padding: 0 17px 17px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.project-approach-card > summary:focus-visible {
+  outline: 2px solid #9b8769;
+  outline-offset: -3px;
+  border-radius: 16px;
+}
+@media (max-width: 640px) {
+  .project-approach-grid { grid-template-columns: 1fr; gap: 8px; }
+  .project-approach-card > summary { padding: 14px 15px; }
+  .project-approach-card > p { padding: 0 15px 15px; font-size: 12px; }
+}
