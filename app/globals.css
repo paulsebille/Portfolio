@@ -4394,3 +4394,10 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media (max-width: 640px) {
   .project-page.project-detail { padding-bottom: 20px; }
 }
+
+
+/* Reduce the dark footer's top breathing room */
+.site-footer { padding-top: 78px; }
+@media (max-width: 640px) {
+  .site-footer { padding-top: 60px; }
+}
