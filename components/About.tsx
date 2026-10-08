@@ -57,7 +57,7 @@ export function About() {
             <h2>
               <span><strong>Je clarifie l’objectif.</strong></span>
               <span><strong>Je fédère les expertises.</strong></span>
-              <span><em>Je mène le projet au résultat.</em></span>
+              <span><em>Je fais avancer les projets.</em></span>
             </h2>
           </div>
         </div>
