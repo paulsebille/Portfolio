@@ -2877,3 +2877,48 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media (max-width:560px) {
   .projects-lead { font-size: 14px; }
 }
+
+
+/* Final refinement: make the project link read clearly as a CTA */
+.hero-scroll {
+  min-height: 56px;
+  gap: clamp(30px, 3.5vw, 42px);
+  padding: 16px 22px;
+  border: 1px solid rgba(255,255,255,.82);
+  border-radius: 17px;
+  background: transparent;
+  color: #f8f7f3;
+  font-size: 14px;
+  font-weight: 520;
+  letter-spacing: -.02em;
+  box-shadow: none;
+  transform: none;
+  transition: background-color .4s ease, border-color .4s ease, color .4s ease;
+}
+.hero-scroll-circle {
+  opacity: .82;
+  transition: opacity .4s ease, transform .65s var(--ease);
+}
+.hero-scroll-circle svg {
+  width: 21px;
+  height: 21px;
+  stroke-width: 1.5;
+}
+.hero-scroll:hover {
+  background: rgba(255,255,255,.055);
+  border-color: #fff;
+  color: #fff;
+  box-shadow: none;
+  transform: none;
+}
+.hero-scroll:hover .hero-scroll-circle {
+  opacity: 1;
+  transform: translateY(3px);
+}
+@media (max-width:560px) {
+  .hero-scroll {
+    min-height: 52px;
+    padding: 14px 18px;
+    font-size: 13px;
+  }
+}
