@@ -70,6 +70,7 @@ export const projects: Project[] = [
       { value: "300+", label: "séries disponibles au lancement" }
     ],
     heroImage: "/images/disney-plus.webp",
+    gallery: ["/images/disney-phone.jpg", "/images/disney-family.png", "/images/disney-launch.webp"],
     visualLabel: "DISNEY+"
   },
   {
@@ -97,7 +98,7 @@ export const projects: Project[] = [
       { value: "20", label: "clients ultra-VIP au Grand Prix" }
     ],
     heroImage: "/images/audi-f1-p1597797.jpg",
-    gallery: ["/images/audi-f1-red.jpg", "/images/audi-f1-vip.jpg", "/images/audi-f1-car.jpg"],
+    gallery: ["/images/audi-f1-red.jpg"],
     visualLabel: "AUDI F1"
   },
   {
