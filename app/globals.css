@@ -4122,7 +4122,13 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     margin-top: 18px;
     gap: 8px;
     font-size: 13px;
-    letter-spacing: .07em;
+    font-weight: 400;
+    letter-spacing: -.025em;
+    text-transform: none;
+  }
+  .footer-cta {
+    font-size: 13px;
+    font-weight: 400;
   }
   .hero-scroll-circle { width: 36px; height: 36px; flex: 0 0 auto; }
   .hero-portrait-wrap {
