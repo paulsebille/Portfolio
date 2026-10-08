@@ -4064,3 +4064,15 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     line-height: 1;
   }
 }
+
+/* Slightly enlarge the four About principle labels and their reveals */
+.about-principle-title {
+  font-size: 14px;
+}
+.about-principle-detail {
+  font-size: 13px;
+}
+@media (max-width: 560px) {
+  .about-principle-title { font-size: 12px; }
+  .about-principle-detail { font-size: 12px; }
+}
