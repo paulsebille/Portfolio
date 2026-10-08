@@ -41,7 +41,7 @@ export const projects: Project[] = [
       { value: "13,6%", label: "taux de conversion" }
     ],
     heroImage: "/images/canneseries-hero.jpg",
-    gallery: ["/images/canneseries-stage.jpg", "/images/canneseries-premiere.jpg"],
+    gallery: ["/images/canneseries-stage.jpg", "/images/canneseries-premiere.jpg", "/images/canneseries-car.jpg", "/images/canneseries-pink-carpet.jpg", "/images/canneseries-arrival.jpg"],
     visualLabel: "CANNESERIES"
   },
   {
