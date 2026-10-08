@@ -3008,3 +3008,213 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   gap: clamp(30px, 3.5vw, 42px);
   transform: none;
 }
+
+
+/* Editorial projects header: anchor the introduction in a warm, quiet card */
+.work-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(330px, .62fr);
+  align-items: end;
+  gap: clamp(34px, 6vw, 88px);
+  margin-bottom: 46px;
+}
+.work-heading-title h2 { max-width: 820px; }
+.projects-intro-card {
+  width: min(100%, 470px);
+  justify-self: end;
+  padding: 23px 26px 24px;
+  border: 1px solid rgba(17,16,15,.08);
+  border-radius: 22px;
+  background: linear-gradient(145deg, #f4f0e8, #ebe5da);
+}
+.projects-intro-label {
+  display: block;
+  margin-bottom: 12px;
+  color: #86765d;
+  font-size: 9px;
+  font-weight: 550;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.projects-lead {
+  width: auto;
+  max-width: 470px;
+  margin: 0;
+  color: #4f4b44;
+  font-size: 14px;
+  line-height: 1.58;
+  letter-spacing: -.015em;
+}
+
+/* Image links use the same fine chevron language as the CTA buttons */
+.project-card-arrow {
+  top: 22px;
+  right: 22px;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255,255,255,.78);
+  border-radius: 999px;
+  background: rgba(10,10,10,.15);
+  color: #fff;
+  opacity: .88;
+  transform: none;
+  box-shadow: none;
+  transition: background-color .45s ease, border-color .45s ease, opacity .4s ease;
+}
+.project-card-arrow svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  overflow: visible;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform .65s var(--ease);
+}
+.project-card:hover .project-card-arrow {
+  border-color: #fff;
+  background: rgba(255,255,255,.14);
+  color: #fff;
+  opacity: 1;
+  transform: none;
+  box-shadow: none;
+}
+.project-card:hover .project-card-arrow svg { transform: translateX(3px); }
+
+/* Replace the stock progress line with an editorial count and segmented track */
+.carousel-controls {
+  margin-top: 24px;
+  align-items: center;
+}
+.carousel-progress {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 17px;
+  min-width: 0;
+}
+.carousel-progress-count {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--muted);
+  letter-spacing: -.04em;
+}
+.carousel-progress-count strong {
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 520;
+  line-height: 1;
+}
+.carousel-progress-count span {
+  font-size: 10px;
+  letter-spacing: .02em;
+}
+.carousel-progress-track {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: min(34vw, 280px);
+}
+.carousel-progress-track span {
+  flex: 1 1 0;
+  height: 2px;
+  min-width: 7px;
+  border-radius: 999px;
+  background: rgba(17,16,15,.16);
+  transition: flex .55s var(--ease), height .45s ease, background-color .45s ease;
+}
+.carousel-progress-track span.is-active {
+  flex: 2.3 1 0;
+  height: 3px;
+  background: #171614;
+}
+
+/* Capsule navigation with understated chevron movement */
+.carousel-buttons {
+  display: flex;
+  gap: 8px;
+}
+.carousel-buttons button {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid rgba(17,16,15,.55);
+  border-radius: 999px;
+  background: transparent;
+  color: #171614;
+  transition: background-color .4s ease, border-color .4s ease, color .4s ease, opacity .35s ease;
+}
+.carousel-buttons button svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  overflow: visible;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform .65s var(--ease);
+}
+.carousel-buttons button:hover:not(:disabled) {
+  border-color: #171614;
+  background: rgba(218,208,191,.3);
+  color: #171614;
+  transform: none;
+}
+.carousel-buttons button:first-child:hover:not(:disabled) svg { transform: translateX(-3px); }
+.carousel-buttons button:last-child:hover:not(:disabled) svg { transform: translateX(3px); }
+.carousel-buttons button:disabled { opacity: .28; }
+.carousel-buttons button:focus-visible {
+  outline: 2px solid rgba(17,16,15,.56);
+  outline-offset: 4px;
+}
+
+@media (max-width:900px) {
+  .work-heading {
+    grid-template-columns: minmax(0, 1fr) minmax(290px, .78fr);
+    gap: 26px;
+  }
+  .projects-intro-card { padding: 21px 22px; border-radius: 20px; }
+}
+@media (max-width:640px) {
+  .work-heading {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-bottom: 30px;
+  }
+  .projects-intro-card {
+    width: 100%;
+    justify-self: stretch;
+    padding: 19px 20px 20px;
+    border-radius: 18px;
+  }
+  .projects-lead { font-size: 14px; }
+  .carousel-progress { gap: 12px; }
+  .carousel-progress-track { width: min(42vw, 210px); gap: 4px; }
+  .carousel-buttons { gap: 6px; }
+  .carousel-buttons button { width: 46px; height: 42px; }
+  .project-card-arrow {
+    display: grid;
+    top: auto;
+    right: 14px;
+    bottom: 14px;
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-card-arrow,
+  .project-card-arrow svg,
+  .carousel-progress-track span,
+  .carousel-buttons button,
+  .carousel-buttons button svg { transition: none; }
+}
