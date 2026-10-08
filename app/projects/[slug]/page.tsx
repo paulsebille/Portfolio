@@ -52,7 +52,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <div className="project-results-grid">
             {project.results.map((result) => (
               <article className="project-result-card" key={`${result.value}-${result.label}`}>
-                
                 <strong>{result.value}</strong>
                 <span className="project-result-label">{result.label}</span>
                 {result.note && <span className="project-result-note">{result.note}</span>}
