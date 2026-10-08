@@ -4111,8 +4111,8 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     line-height: .84;
   }
   .hero-intro {
-    width: 58%;
-    max-width: 58%;
+    width: 53%;
+    max-width: 53%;
     margin-top: 26px;
     padding-top: 13px;
   }
@@ -4130,7 +4130,7 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     top: clamp(175px, 42vw, 260px);
     right: 0;
     z-index: 1;
-    width: min(37vw, 154px);
+    width: min(42vw, 172px);
     margin: 0;
     opacity: 1;
     pointer-events: none;
@@ -4153,5 +4153,14 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     width: 36px;
     height: 36px;
     margin-bottom: 0;
+  }
+  .hero-scroll,
+  .footer-cta {
+    min-height: 44px;
+    padding: 9px 15px;
+  }
+  .hero-scroll-circle {
+    width: 32px;
+    height: 32px;
   }
 }
