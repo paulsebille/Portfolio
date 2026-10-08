@@ -4076,3 +4076,18 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .about-principle-title { font-size: 12px; }
   .about-principle-detail { font-size: 12px; }
 }
+
+
+/* Keep decorative About stars monochrome on mobile and desktop */
+.creative-spark svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+.creative-core svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
