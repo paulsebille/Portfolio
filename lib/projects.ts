@@ -33,8 +33,8 @@ export const projects: Project[] = [
       { title: "Business", text: "Une activation pensée pour aller jusqu’au contact commercial : essais, leads et ventes suivis dans le temps." }
     ],
     results: [
-      { value: "+110K", label: "vues Meta" },
       { value: "48,4M", label: "impressions CANNESERIES" },
+      { value: "+110K", label: "vues Meta" },
       { value: "59", label: "leads générés" },
       { value: "36", label: "essais" },
       { value: "8", label: "ventes au 01/06/2026" },
