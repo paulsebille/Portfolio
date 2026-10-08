@@ -3341,3 +3341,32 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   background: #171614;
   opacity: 1;
 }
+
+
+/* Editorial treatment for the project introduction */
+.projects-intro-card {
+  padding: 25px 28px 27px;
+}
+.projects-lead {
+  max-width: 430px;
+  color: #514d45;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: -.012em;
+}
+.projects-lead-emphasis {
+  max-width: 390px;
+  margin: 16px 0 0;
+  padding-left: 15px;
+  border-left: 1px solid rgba(134, 118, 93, .62);
+  color: #24221e;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(17px, 1.55vw, 20px);
+  font-style: italic;
+  line-height: 1.38;
+  letter-spacing: -.025em;
+}
+@media (max-width: 640px) {
+  .projects-intro-card { padding: 22px 21px 24px; }
+  .projects-lead-emphasis { margin-top: 13px; font-size: 18px; }
+}
