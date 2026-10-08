@@ -195,8 +195,8 @@ export const projects: Project[] = [
     description:
       "Dans le cadre de mes missions pour E! Entertainment, j’ai participé à la promotion de L’Incroyable Famille Kardashian à travers une activation dédiée à la série. L’objectif : créer un temps fort autour de la franchise et faire vivre l’univers Kardashian au-delà de l’écran, en réunissant des influenceurs autour d’une expérience pensée pour générer de la visibilité et du contenu sur les réseaux sociaux.",
     approach: [
-      { title: "Influence", text: "Sélection et invitation d’influenceurs, gestion des invitations et coordination des participants autour d’une expérience dédiée à l’univers E!." },
-      { title: "Événement", text: "Créer un temps fort physique autour de L’Incroyable Famille Kardashian et offrir aux invités un contexte propice au partage social." },
+      { title: "Activation influence", text: "Sélection et invitation d’influenceurs, gestion des invitations et coordination des participants autour d’une expérience dédiée à l’univers E!." },
+      { title: "Création d’un événement", text: "Créer un temps fort physique autour de L’Incroyable Famille Kardashian et offrir aux invités un contexte propice au partage social." },
       { title: "Relations presse", text: "Rédaction de communiqués, relations avec les médias et coordination des prises de parole pour 13ème RUE, SYFY et E! Entertainment." },
       { title: "Contenu & réseaux sociaux", text: "Création de visuels et supports graphiques, rédaction de contenus, publication et relais de l’événement sur les réseaux sociaux." }
     ],
