@@ -28,9 +28,9 @@ export const projects: Project[] = [
       "Du transport des invités au Pink Carpet, des avant-premières aux soirées privées, Audi s’est intégrée à l’expérience CANNESERIES à travers un dispositif pensé pour toucher une audience premium, B2B et B2C. L’enjeu était double : créer de la préférence de marque auprès d’une audience qualifiée et transformer la visibilité du partenariat en expérience, en contenu et en business.",
     approach: [
       { title: "Construire le partenariat", text: "Une flotte de 19 Audi et un dispositif déployé pendant les 6 jours du festival pour inscrire la marque au cœur de l’expérience." },
-      { title: "Expérience VIP", text: "Transferts Hôtel Majestic ↔ Palais des Festivals, escorte Police Nationale, Pink Carpet, avant-premières, cocktails, soirées privées, nuit au Majestic Barrière et sessions de doublage." },
-      { title: "Contenu & visibilité", text: "Un dispositif éditorial et social prolongé par les publications, stories et contenus produits autour du festival." },
-      { title: "Business", text: "Une activation pensée pour aller jusqu’au contact commercial : essais, leads et ventes suivis dans le temps." }
+      { title: "Proposer une expérience VIP", text: "Transferts Hôtel Majestic ↔ Palais des Festivals, escorte Police Nationale, Pink Carpet, avant-premières, cocktails, soirées privées, nuit au Majestic Barrière et sessions de doublage." },
+      { title: "Créer du contenu et de la visibilité", text: "Un dispositif éditorial et social prolongé par les publications, stories et contenus produits autour du festival." },
+      { title: "Générer du business", text: "Une activation pensée pour aller jusqu’au contact commercial : essais, leads et ventes suivis dans le temps." }
     ],
     results: [
       { value: "48,4M", label: "impressions CANNESERIES" },
