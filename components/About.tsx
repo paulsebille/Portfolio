@@ -63,7 +63,6 @@ export function About() {
 
         <div className="about-manifesto">
           <p>Je définis les priorités, aligne les expertises et donne à chaque projet les conditions pour avancer — de la stratégie au terrain, jusqu’à la mesure des résultats.</p>
-          <span>Stratégie, performance, créativité, One Team : quatre leviers qui structurent ma démarche.</span>
         </div>
 
         <div className="about-principles-editorial">
