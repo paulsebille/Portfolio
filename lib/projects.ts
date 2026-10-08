@@ -98,7 +98,7 @@ export const projects: Project[] = [
       { value: "20", label: "clients ultra-VIP au Grand Prix" }
     ],
     heroImage: "/images/audi-f1-p1597797.jpg",
-    gallery: ["/images/audi-f1-red.jpg"],
+    gallery: ["/images/audi-f1-red.jpg", "/images/audi-f1-closeup.webp", "/images/audi-f1-visitors.webp", "/images/audi-f1-showcar.webp", "/images/audi-f1-r26-reveal.webp", "/images/audi-f1-front.webp", "/images/audi-f1-event.webp"],
     visualLabel: "AUDI F1"
   },
   {
@@ -125,7 +125,7 @@ export const projects: Project[] = [
       { value: "≈4,5%", label: "taux d’engagement", note: "Estimation" }
     ],
     heroImage: "/images/kenzo-hero.jpg",
-    gallery: ["/images/kenzo-palais.jpg", "/images/kenzo-cars.jpg", "/images/kenzo-two-idbuzz.webp", "/images/kenzo-idbuzz-sea.webp", "/images/kenzo-palais-wide.webp", "/images/kenzo-brand-detail.webp", "/images/kenzo-yellow-idbuzz.webp"],
+    gallery: ["/images/kenzo-two-idbuzz.webp", "/images/kenzo-idbuzz-sea.webp", "/images/kenzo-palais-wide.webp", "/images/kenzo-brand-detail.webp", "/images/kenzo-yellow-idbuzz.webp"],
     visualLabel: "KENZO × ID. BUZZ"
   },
   {

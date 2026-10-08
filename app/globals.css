@@ -4588,3 +4588,20 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .project-detail-disney-plus .project-gallery-slide:last-child img {
   object-fit: contain !important;
 }
+
+
+/* Preserve the full composition of portrait event photos in the project carousels */
+.project-gallery-slide-portrait {
+  flex: 0 0 clamp(330px, 37vw, 490px);
+  height: clamp(495px, 55vw, 735px);
+  background: #171614;
+}
+.project-gallery-slide-portrait img {
+  object-fit: contain !important;
+}
+@media (max-width: 640px) {
+  .project-gallery-slide-portrait {
+    flex-basis: min(80vw, 320px);
+    height: min(120vw, 480px);
+  }
+}

@@ -36,7 +36,7 @@ export function ProjectGalleryCarousel({
     <div className="project-gallery-carousel">
       <div className={`project-gallery-track${images.length === 1 ? " is-single" : ""}`} ref={trackRef} aria-label={`Galerie photo — ${title}`}>
         {images.map((image, index) => (
-          <figure className="project-gallery-slide" key={`${image}-${index}`}>
+          <figure className={`project-gallery-slide${/(?:canneseries-(?:car|pink-carpet|arrival)\.jpg|audi-f1-(?:closeup|visitors|showcar|r26-reveal|front|event)\.webp)$/.test(image) ? " project-gallery-slide-portrait" : ""}`} key={`${image}-${index}`}>
             <Image
               src={image}
               alt={`${title} — photo ${index + 1}`}
