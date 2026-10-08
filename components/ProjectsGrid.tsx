@@ -83,10 +83,6 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
 
       <div className="carousel-controls container">
         <div className="carousel-progress" role="status" aria-label={`Projet ${active + 1} sur ${projects.length}`}>
-          <div className="carousel-progress-count" aria-live="polite">
-            <strong>{String(active + 1).padStart(2, "0")}</strong>
-            <span>/ {String(projects.length).padStart(2, "0")}</span>
-          </div>
           <div className="carousel-progress-track" aria-hidden="true">
             {projects.map((project, index) => <span key={project.slug} className={index === active ? "is-active" : ""} />)}
           </div>
