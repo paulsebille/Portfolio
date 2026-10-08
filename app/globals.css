@@ -4644,3 +4644,27 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .project-detail-disney-plus .project-approach-card:nth-child(3) { order: 4; }
   .project-detail-disney-plus .project-approach-card:nth-child(4) { order: 3; }
 }
+
+
+/* Soft mobile contrast behind project carousel titles */
+@media (max-width: 640px) {
+  .project-card-content {
+    isolation: isolate;
+  }
+  .project-card-content::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -28px;
+    right: -18px;
+    bottom: -16px;
+    left: -18px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, rgba(8,8,8,.68) 0%, rgba(8,8,8,.38) 58%, rgba(8,8,8,0) 100%);
+    filter: blur(8px);
+    pointer-events: none;
+  }
+  .project-card-content h3 {
+    text-shadow: 0 1px 16px rgba(0,0,0,.22);
+  }
+}
