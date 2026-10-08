@@ -34,7 +34,7 @@ export function ProjectGalleryCarousel({
 
   return (
     <div className="project-gallery-carousel">
-      <div className="project-gallery-track" ref={trackRef} aria-label={`Galerie photo — ${title}`}>
+      <div className={`project-gallery-track${images.length === 1 ? " is-single" : ""}`} ref={trackRef} aria-label={`Galerie photo — ${title}`}>
         {images.map((image, index) => (
           <figure className="project-gallery-slide" key={`${image}-${index}`}>
             <Image
@@ -44,9 +44,6 @@ export function ProjectGalleryCarousel({
               sizes="(max-width: 800px) 92vw, 1200px"
               priority={index === 0}
             />
-            <span className="project-gallery-slide-index" aria-hidden="true">
-              {String(index + 1).padStart(2, "0")}
-            </span>
           </figure>
         ))}
       </div>
