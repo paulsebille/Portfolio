@@ -32,14 +32,36 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
     const track = trackRef.current;
     if (!track) return;
     const cards = Array.from(track.querySelectorAll<HTMLElement>(".project-card"));
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (!visible) return;
-      const index = cards.indexOf(visible.target as HTMLElement);
-      if (index >= 0) setActive(index);
-    }, { root: track, threshold: [0.5, 0.75, 0.95] });
-    cards.forEach((card) => observer.observe(card));
-    return () => observer.disconnect();
+    let frame = 0;
+
+    const updateActiveCard = () => {
+      window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(() => {
+        const trackCenter = track.getBoundingClientRect().left + track.clientWidth / 2;
+        let nearestIndex = 0;
+        let nearestDistance = Number.POSITIVE_INFINITY;
+
+        cards.forEach((card, index) => {
+          const rect = card.getBoundingClientRect();
+          const distance = Math.abs(rect.left + rect.width / 2 - trackCenter);
+          if (distance < nearestDistance) {
+            nearestDistance = distance;
+            nearestIndex = index;
+          }
+        });
+
+        setActive((current) => current === nearestIndex ? current : nearestIndex);
+      });
+    };
+
+    updateActiveCard();
+    track.addEventListener("scroll", updateActiveCard, { passive: true });
+    window.addEventListener("resize", updateActiveCard);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      track.removeEventListener("scroll", updateActiveCard);
+      window.removeEventListener("resize", updateActiveCard);
+    };
   }, [projects.length]);
 
   const goTo = (index: number) => {
