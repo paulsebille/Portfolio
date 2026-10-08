@@ -4579,3 +4579,12 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+
+/* Keep the full Disney+ franchise artwork visible, including edge logos */
+.project-detail-disney-plus .project-gallery-slide:last-child {
+  background: #071331;
+}
+.project-detail-disney-plus .project-gallery-slide:last-child img {
+  object-fit: contain !important;
+}
