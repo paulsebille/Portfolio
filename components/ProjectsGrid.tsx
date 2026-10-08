@@ -50,10 +50,13 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
   return (
     <section className="work" id="work">
       <div className="work-heading container">
-        <div>
+        <div className="work-heading-title">
           <h2>Des idées qui prennent vie.<br /><em>Des projets qui créent de l’impact.</em></h2>
         </div>
-        <p className="projects-lead">Découvrez une sélection de campagnes, lancements, partenariats et expériences entre divertissement, automobile et univers premium — toujours avec la même ambition : transformer une idée en expérience et en impact business.</p>
+        <aside className="projects-intro-card" aria-label="L’ambition des projets">
+          <span className="projects-intro-label">Une même ambition</span>
+          <p className="projects-lead">Découvrez une sélection de campagnes, lancements, partenariats et expériences entre divertissement, automobile et univers premium — toujours avec la même ambition : transformer une idée en expérience et en impact business.</p>
+        </aside>
       </div>
 
       <div className="carousel-shell">
@@ -65,7 +68,7 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
                   <ProjectVisual project={project} />
                   <div className="project-card-shade" />
                   <div className="project-card-light" />
-                  <div className="project-card-arrow" aria-hidden="true"><b>→</b></div>
+                  <div className="project-card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6.5 14.5 12 9 17.5" /></svg></div>
                   <div className="project-card-content">
                     <span className="project-card-brand">{project.brand}</span>
                     <h3>{project.title}</h3>
@@ -79,12 +82,22 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
       </div>
 
       <div className="carousel-controls container">
-        <div className="carousel-progress" aria-label="Progression des projets">
-          <div className="carousel-progress-line"><i style={{ width: `${((active + 1) / projects.length) * 100}%` }} /></div>
+        <div className="carousel-progress" role="status" aria-label={`Projet ${active + 1} sur ${projects.length}`}>
+          <div className="carousel-progress-count" aria-live="polite">
+            <strong>{String(active + 1).padStart(2, "0")}</strong>
+            <span>/ {String(projects.length).padStart(2, "0")}</span>
+          </div>
+          <div className="carousel-progress-track" aria-hidden="true">
+            {projects.map((project, index) => <span key={project.slug} className={index === active ? "is-active" : ""} />)}
+          </div>
         </div>
         <div className="carousel-buttons">
-          <button type="button" onClick={() => goTo(Math.max(0, active - 1))} disabled={active === 0} aria-label="Projet précédent">←</button>
-          <button type="button" onClick={() => goTo(Math.min(projects.length - 1, active + 1))} disabled={active === projects.length - 1} aria-label="Projet suivant">→</button>
+          <button type="button" onClick={() => goTo(Math.max(0, active - 1))} disabled={active === 0} aria-label="Projet précédent">
+            <svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M14.5 6.5 9 12l5.5 5.5" /></svg>
+          </button>
+          <button type="button" onClick={() => goTo(Math.min(projects.length - 1, active + 1))} disabled={active === projects.length - 1} aria-label="Projet suivant">
+            <svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9.5 6.5 15 12l-5.5 5.5" /></svg>
+          </button>
         </div>
       </div>
     </section>
