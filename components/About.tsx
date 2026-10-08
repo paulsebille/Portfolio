@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from "react";
 
 const principles = [
   ["Stratégie", "Donner un cap, poser les objectifs et construire un dispositif qui sert vraiment la marque."],
-  ["Créativité", "Créer des idées désirables, des expériences qui se vivent et des univers qui restent."],
-  ["One Team", "Faire avancer les équipes ensemble, coordonner, fédérer et manager avec une énergie collective."],
   ["Performance", "Les KPI ne sont pas une finalité : ils permettent de décider, d’optimiser et de faire grandir le business."],
+  ["One Team", "Faire avancer les équipes ensemble, coordonner, fédérer et manager avec une énergie collective."],
+  ["Créativité", "Créer des idées désirables, des expériences qui se vivent et des univers qui restent."],
 ];
 
 const hardSkills = ["Pack Office", "Adobe Creative Cloud", "Google Ads", "WordPress", "Social Media", "CRM"];
@@ -64,7 +64,7 @@ export function About() {
 
         <div className="about-manifesto">
           <p>Je définis les priorités, aligne les expertises et donne à chaque projet les conditions pour avancer — de la stratégie au terrain, jusqu’à la mesure des résultats.</p>
-          <span>Stratégie, créativité, One Team, performance : quatre leviers qui structurent ma démarche.</span>
+          <span>Stratégie, performance, One Team, créativité : quatre leviers qui structurent ma démarche.</span>
         </div>
 
         <div className="about-principles-editorial">
