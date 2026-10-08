@@ -69,6 +69,7 @@ export const projects: Project[] = [
       { value: "500+", label: "films disponibles au lancement", note: "Contexte plateforme" },
       { value: "300+", label: "séries disponibles au lancement", note: "Contexte plateforme" }
     ],
+    heroImage: "/images/disney-plus.webp",
     visualLabel: "DISNEY+"
   },
   {
