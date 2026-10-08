@@ -137,7 +137,7 @@ export const projects: Project[] = [
     role: "Marketing & Relations Presse",
     categories: ["Relations presse", "Influence", "Événementiel", "Digital"],
     description:
-      "À l’été 2019, Disney prépare le retour au cinéma de l’un de ses films les plus iconiques. De l’organisation de voyages presse au press junket du Bristol, à la rencontre avec les voix françaises du film, jusqu’à l’avant-première au Grand Rex, chaque temps fort était pensé pour créer de la visibilité et alimenter les prises de parole de Disney avant la sortie.",
+      "À l’été 2019, Disney prépare le retour au cinéma de l’un de ses films les plus iconiques. Des voyages médias aux rencontres avec les voix françaises au Bristol, puis à l’avant-première au Grand Rex, chaque temps fort était pensé pour créer de la visibilité et nourrir les prises de parole de Disney avant la sortie.",
     approach: [
       { title: "Press junket · Le Bristol", text: "Organisation et coordination d’un press junket permettant aux journalistes et médias de rencontrer les voix françaises du film et de produire leurs contenus éditoriaux." },
       { title: "Avant-première · Grand Rex", text: "Le 11 juillet 2019, une projection spéciale réunissant 2 500 spectateurs, les voix françaises et de nombreux invités, créateurs et influenceurs." },
