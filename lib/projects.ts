@@ -87,7 +87,7 @@ export const projects: Project[] = [
       { title: "Night Edition", text: "Le 28 mai 2026, révélation de l’Audi R26 Showcar à Audi Mougins dans une scénographie immersive : lumière, musique, cocktail, animations et collaborations locales." },
       { title: "Grand Prix de Monaco", text: "Une journée exclusive pour 20 clients ultra-VIP avec brunch festif et expérience privilégiée au cœur du Grand Prix." },
       { title: "Hospitalité", text: "Créer une expérience client premium autour d’un territoire de marque inédit pour Audi et prolonger la relation au-delà de la concession." },
-      { title: "Contenu", text: "Produire des contenus photo et vidéo et relayer les temps forts sur les réseaux sociaux pour prolonger l’expérience." }
+      { title: "Relai social media", text: "Produire des contenus photo et vidéo et relayer les temps forts sur les réseaux sociaux pour prolonger l’expérience." }
     ],
     results: [
       { value: "89", label: "invités présents à la Night Edition" },
