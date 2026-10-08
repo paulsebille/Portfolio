@@ -4127,19 +4127,25 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .hero-scroll-circle { width: 36px; height: 36px; flex: 0 0 auto; }
   .hero-portrait-wrap {
     position: absolute;
-    top: clamp(175px, 42vw, 260px);
-    right: 0;
+    top: 0;
+    right: -11vw;
     z-index: 1;
-    width: min(42vw, 172px);
+    width: min(70vw, 270px);
+    height: clamp(340px, 112vw, 430px);
     margin: 0;
     opacity: 1;
     pointer-events: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.4) 27%, #000 56%);
+    mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.4) 27%, #000 56%);
   }
   .hero-portrait {
-    aspect-ratio: .74 / 1;
-    border-radius: 120px 120px 18px 18px;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    border-radius: 150px 150px 18px 18px;
     box-shadow: 0 14px 36px rgba(42, 37, 30, .12);
   }
+  .hero-portrait-image { object-position: center 20%; }
   .footer-contact-grid {
     gap: 0;
     margin-top: 58px;
