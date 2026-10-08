@@ -4128,7 +4128,7 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .hero-portrait-wrap {
     position: absolute;
     top: 0;
-    right: -20vw;
+    right: -27vw;
     z-index: 1;
     width: min(70vw, 270px);
     height: clamp(340px, 112vw, 430px);
