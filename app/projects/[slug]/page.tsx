@@ -23,8 +23,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <span className="project-detail-kicker">{project.brand}<i />{project.year}</span>
         </div>
         <div className={`project-detail-hero-layout${project.heroImage ? " has-image" : ""}`}>
-          <div className="project-detail-heading">
-            <h1>{project.title}</h1>
+          <div className="project-detail-copy">
+            <div className="project-detail-heading">
+              <h1>{project.title}</h1>
+            </div>
+            <div className="project-detail-brief">
+              <h2 id="project-brief-title" className="project-brief-title">En bref</h2>
+              <p className="project-brief-text">{project.intro}</p>
+            </div>
           </div>
           {project.heroImage && (
             <div className="project-detail-hero-image" aria-label={`Visuel principal — ${project.title}`}>
@@ -32,13 +38,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               <span className="project-detail-image-label">{project.visualLabel ?? project.brand}</span>
             </div>
           )}
-        </div>
-      </section>
-
-      <section className="project-brief-section container" aria-labelledby="project-brief-title">
-        <div className="project-brief-copy">
-          <h2 id="project-brief-title" className="project-brief-title">En bref</h2>
-          <p className="project-brief-text">{project.intro}</p>
         </div>
       </section>
 
