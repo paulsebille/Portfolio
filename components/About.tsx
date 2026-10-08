@@ -54,10 +54,10 @@ export function About() {
             <span className="creative-label label-three">IMPACT</span>
           </div>
           <div className="about-hero-copy">
-            <h2>
+            <h2 className="about-leadership-headline">
               <span><strong>Donner un cap au marketing.</strong></span>
               <span><strong>Fédérer les équipes.</strong></span>
-              <span><em>Transformer la vision en résultats.</em></span>
+              <span><em>Transformer la vision en<br />résultats.</em></span>
             </h2>
           </div>
         </div>
