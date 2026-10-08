@@ -55,16 +55,16 @@ export function About() {
           </div>
           <div className="about-hero-copy">
             <h2>
-              <span><strong>Je clarifie l’objectif.</strong></span>
-              <span><strong>Je fédère les expertises.</strong></span>
+              <span><strong>J’imagine des expériences.</strong></span>
+              <span><strong>J’embarque les équipes.</strong></span>
               <span><em>Je fais avancer les projets.</em></span>
             </h2>
           </div>
         </div>
 
         <div className="about-manifesto">
-          <p>Je pilote des projets marketing de bout en bout, en reliant stratégie, créativité et expérience client pour transformer un objectif de marque en résultats mesurables.</p>
-          <span>Concrètement : je cadre le besoin, coordonne les équipes et ajuste le dispositif à partir du terrain et des KPI.</span>
+          <p>Je pars des objectifs de la marque, imagine une expérience juste, fédère les bonnes expertises et pilote chaque étape jusqu’aux résultats.</p>
+          <span>Ma démarche s’appuie sur quatre leviers : stratégie, créativité, One Team et performance.</span>
         </div>
 
         <div className="about-principles-editorial">
