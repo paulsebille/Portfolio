@@ -157,7 +157,7 @@ export const projects: Project[] = [
   {
     slug: "cupra-nice-jazz-festival",
     brand: "CUPRA × NICE JAZZ FESTIVAL",
-    title: "Quand la CUPRA Raval entre en scène",
+    title: "Révéler la CUPRA Raval au cœur du Nice Jazz Festival",
     year: "2026",
     intro:
       "Du 23 au 25 juillet 2026, CUPRA s’est invitée au cœur du Nice Jazz Festival à travers une collaboration réunissant CUPRA, Sixt France, le Nice Jazz Festival et la Ville de Nice.",
