@@ -3218,3 +3218,82 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .carousel-buttons button,
   .carousel-buttons button svg { transition: none; }
 }
+
+
+/* Strip the circular treatment from project-card chevrons */
+.project-card-arrow {
+  top: 21px;
+  right: 22px;
+  width: 34px;
+  min-width: 34px;
+  height: 40px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  opacity: .78;
+  backdrop-filter: none;
+  box-shadow: none;
+  transform: none;
+  transition: opacity .45s ease;
+}
+.project-card-arrow svg {
+  width: 23px;
+  height: 23px;
+  stroke-width: 1.35;
+  transition: transform .7s var(--ease);
+}
+.project-card:hover .project-card-arrow {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  opacity: 1;
+  box-shadow: none;
+  transform: none;
+}
+.project-card:hover .project-card-arrow svg { transform: translateX(2px); }
+
+/* Keep carousel progress purely visual: no numbered countdown */
+.carousel-progress { gap: 0; }
+.carousel-progress-track {
+  width: auto;
+  max-width: 100%;
+  gap: 5px;
+}
+.carousel-progress-track span {
+  flex: 0 0 9px;
+  width: 9px;
+  height: 3px;
+  min-width: 9px;
+  background: rgba(17,16,15,.18);
+  transition: flex-basis .65s var(--ease), background-color .45s ease, opacity .45s ease;
+}
+.carousel-progress-track span.is-active {
+  flex-basis: 30px;
+  height: 3px;
+  background: #171614;
+}
+.carousel-buttons button {
+  transition: background-color .45s ease, border-color .45s ease, color .45s ease, opacity .4s ease;
+}
+.carousel-buttons button svg { transition: transform .7s var(--ease); }
+.carousel-buttons button:first-child:hover:not(:disabled) svg { transform: translateX(-2px); }
+.carousel-buttons button:last-child:hover:not(:disabled) svg { transform: translateX(2px); }
+
+@media (max-width:640px) {
+  .project-card-arrow {
+    top: auto;
+    right: 14px;
+    bottom: 15px;
+    width: 32px;
+    min-width: 32px;
+    height: 36px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-card-arrow,
+  .project-card-arrow svg,
+  .carousel-progress-track span,
+  .carousel-buttons button,
+  .carousel-buttons button svg { transition: none; }
+}
