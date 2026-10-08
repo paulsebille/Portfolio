@@ -4477,3 +4477,40 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .project-approach-card > summary { padding: 14px 15px; }
   .project-approach-card > p { padding: 0 15px 15px; font-size: 12px; }
 }
+
+
+/* Project intro: keep the title and short brief together beside the hero image */
+.project-detail-copy {
+  min-width: 0;
+}
+.project-detail-copy .project-detail-heading h1 {
+  max-width: 13ch;
+}
+.project-detail-brief {
+  margin-top: clamp(25px, 3.2vw, 42px);
+  max-width: 52ch;
+}
+.project-detail-brief .project-brief-title {
+  margin: 0 0 12px;
+  font-size: clamp(23px, 2.2vw, 30px);
+  line-height: 1.05;
+}
+.project-detail-brief .project-brief-text {
+  margin: 0;
+  font-size: clamp(14px, 1.2vw, 16px);
+  line-height: 1.65;
+}
+@media (max-width: 640px) {
+  .project-detail-copy { display: contents; }
+  .project-detail-heading { order: 1; }
+  .project-detail-hero-image { order: 2; }
+  .project-detail-brief {
+    order: 3;
+    margin-top: 2px;
+  }
+  .project-detail-brief .project-brief-title {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+  .project-detail-brief .project-brief-text { font-size: 14px; }
+}
