@@ -55,16 +55,16 @@ export function About() {
           </div>
           <div className="about-hero-copy">
             <h2>
-              <span><strong>Une vision créative.</strong></span>
-              <span><strong>Une énergie collective.</strong></span>
-              <span><em>Un impact qui compte.</em></span>
+              <span><strong>Je clarifie l’objectif.</strong></span>
+              <span><strong>Je fédère les expertises.</strong></span>
+              <span><em>Je mène le projet au résultat.</em></span>
             </h2>
           </div>
         </div>
 
         <div className="about-manifesto">
-          <p>Je relie stratégie, créativité, expérience client et performance pour transformer une vision en projets qui créent de la valeur.</p>
-          <span>Le bon concept attire. Le bon collectif l’exécute. Les bons KPI permettent de l’améliorer.</span>
+          <p>Je pilote des projets marketing de bout en bout, en reliant stratégie, créativité et expérience client pour transformer un objectif de marque en résultats mesurables.</p>
+          <span>Concrètement : je cadre le besoin, coordonne les équipes et ajuste le dispositif à partir du terrain et des KPI.</span>
         </div>
 
         <div className="about-principles-editorial">
