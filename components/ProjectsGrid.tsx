@@ -106,7 +106,10 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
       <div className="carousel-controls container">
         <div className="carousel-progress" role="status" aria-label={`Projet ${active + 1} sur ${projects.length}`}>
           <div className="carousel-progress-track" aria-hidden="true">
-            {projects.map((project, index) => <span key={project.slug} className={index === active ? "is-active" : ""} />)}
+            {projects.slice(1, -1).map((project, index) => {
+              const progressIndex = Math.round((active / Math.max(projects.length - 1, 1)) * (projects.length - 3));
+              return <span key={project.slug} className={index === progressIndex ? "is-active" : ""} />;
+            })}
           </div>
         </div>
         <div className="carousel-buttons">
