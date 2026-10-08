@@ -63,11 +63,11 @@ export const projects: Project[] = [
       { title: "Expérience", text: "Organisation d’événements VIP et influenceurs ainsi que d’activations liées aux sorties de films." }
     ],
     results: [
-      { value: "1,8M", label: "téléchargements de l’app en France en 24h", note: "Contexte lancement" },
-      { value: "50M", label: "abonnés payants Disney+ dans le monde", note: "5 mois après le lancement US" },
-      { value: "73,7M", label: "abonnés mondiaux", note: "Au 3 octobre 2020" },
-      { value: "500+", label: "films disponibles au lancement", note: "Contexte plateforme" },
-      { value: "300+", label: "séries disponibles au lancement", note: "Contexte plateforme" }
+      { value: "1,8M", label: "téléchargements de l’app en France en 24h" },
+      { value: "50M", label: "abonnés payants dans le monde, 5 mois après le lancement US" },
+      { value: "73,7M", label: "abonnés mondiaux au 3 octobre 2020" },
+      { value: "500+", label: "films disponibles au lancement" },
+      { value: "300+", label: "séries disponibles au lancement" }
     ],
     heroImage: "/images/disney-plus.webp",
     visualLabel: "DISNEY+"
