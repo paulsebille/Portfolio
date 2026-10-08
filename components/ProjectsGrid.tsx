@@ -77,8 +77,8 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
         </div>
           <div className="projects-section-subtitle" aria-label="Campagnes et expériences de marque">
             <p className="projects-subtitle-worlds">Divertissement · automobile · premium</p>
-            <p className="projects-subtitle-context">Campagnes, lancements, partenariats et expériences de marque.</p>
-            <p className="projects-subtitle-promise">De l’idée à l’expérience.<br /><span>De l’expérience à l’impact business.</span></p>
+            <p className="projects-subtitle-context">Explorez une sélection de projets que j’ai imaginés et pilotés : campagnes, lancements, partenariats et expériences dans le divertissement, l’automobile et le premium.</p>
+            <p className="projects-subtitle-promise">Une ambition : transformer chaque idée en expérience et en résultats concrets.</p>
           </div>
       </div>
 
