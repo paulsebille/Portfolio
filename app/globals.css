@@ -4708,3 +4708,12 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     font-size: 13px;
   }
 }
+
+
+/* Prevent page-level horizontal dragging on mobile */
+@media (max-width: 640px) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+}
