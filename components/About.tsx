@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const principles = [
   ["Stratégie", "Donner un cap, poser les objectifs et construire un dispositif qui sert vraiment la marque."],
-  ["Performance", "Les KPI ne sont pas une finalité : ils permettent de décider, d’optimiser et de faire grandir le business."],
+  ["Performance", "Piloter les KPI et la data pour mesurer les résultats, éclairer les décisions et optimiser la performance."],
   ["Créativité", "Créer des idées désirables, des expériences qui se vivent et des univers qui restent."],
   ["One Team", "Faire avancer les équipes ensemble, coordonner, fédérer et manager avec une énergie collective."],
 ];
