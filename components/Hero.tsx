@@ -30,7 +30,7 @@ export function Hero() {
         <div className="hero-stage">
           <div className="hero-copy">
             <h1>
-              <span>Marketing &amp;</span>
+              <span>Marketing, Performance &amp;</span>
               <span>Brand <i>Experience.</i></span>
             </h1>
             <div className="hero-intro">
