@@ -2198,7 +2198,7 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media (max-width:560px) {
   .about-creative-visual .creative-core { left: 49%; top: 43%; font-size: 28px; }
   .about-team-visual::before { width: 118px; height: 118px; }
-  .skills-card-head .skills-editorial-title { font-size: 34px; }
+  .skills-card-head .skills-editorial-title { font-size: clamp(25px, 7vw, 30px); }
 }
 
 
