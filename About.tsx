@@ -7,7 +7,7 @@ export function About() {
     ["05", "Management & One Team", "Fédérer, coordonner, donner un cap et faire avancer les équipes ensemble"],
   ];
 
-  const hardSkills = ["Pack Office", "Adobe Creative Cloud", "Google Ads", "WordPress", "Social Media", "CRM"];
+  const hardSkills = ["Pack Office", "Adobe Creative Cloud", "Google Ads", "WordPress", "Social Media", "CRM", "Salesforce", "Marketing Automation", "Data & Performance"];
   const softSkills = ["Créatif", "Dynamique", "Souriant", "Esprit d’équipe", "Passionné", "Polyvalent"];
 
   return (
