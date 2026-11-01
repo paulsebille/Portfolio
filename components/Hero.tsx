@@ -36,10 +36,10 @@ export function Hero() {
               <span><i>Experience.</i></span>
             </h1>
             <div className="hero-intro">
-              <p className="hero-intro-quote">Créer le lien. Personnaliser l’expérience. Mesurer l’impact.</p>
-              <p className="hero-intro-body">Je relie marketing, communication et expérience client.
+              <p className="hero-intro-quote">J’ai appris à faire rêver. Aujourd’hui, je veux créer des expériences qui font avancer les marques.</p>
+              <p className="hero-intro-body">Je relie stratégie marketing, expérience client et gestion de la data
               <br />
-              <span>CRM, data et automatisation au service de parcours plus pertinents et d’une performance mesurable.</span></p>
+              <span>pour transformer la connaissance des publics en actions personnalisées et en résultats mesurables.</span></p>
             </div>
             <Link href="#work" className="hero-scroll">
               <span>Explorer les projets</span>
