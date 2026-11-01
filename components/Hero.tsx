@@ -30,8 +30,10 @@ export function Hero() {
         <div className="hero-stage">
           <div className="hero-copy">
             <h1>
-              <span>Marketing, Performance &amp;</span>
-              <span>Brand <i>Experience.</i></span>
+              <span>Marketing,</span>
+              <span>Performance &amp;</span>
+              <span>Brand</span>
+              <span><i>Experience.</i></span>
             </h1>
             <div className="hero-intro">
               <p className="hero-intro-quote">Créer le lien. Personnaliser l’expérience. Mesurer l’impact.</p>
