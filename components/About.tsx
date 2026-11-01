@@ -9,7 +9,7 @@ const principles = [
   ["One Team", "Faire avancer les équipes ensemble, coordonner, fédérer et manager avec une énergie collective."],
 ];
 
-const hardSkills = ["Pack Office", "Adobe Creative Cloud", "Google Ads", "WordPress", "Social Media", "CRM"];
+const hardSkills = ["Pack Office", "Adobe Creative Cloud", "Google Ads", "WordPress", "Social Media", "CRM", "Salesforce", "Marketing Automation", "Data & Performance"];
 const softSkills = ["Créatif", "Dynamique", "Souriant", "Esprit d’équipe", "Passionné", "Polyvalent"];
 
 function Reveal({ children, className = "" }: { children: React.ReactNode; className?: string }) {
