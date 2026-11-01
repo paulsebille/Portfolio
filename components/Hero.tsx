@@ -31,8 +31,8 @@ export function Hero() {
           <div className="hero-copy">
             <h1>
               <span>Marketing,</span>
-              <span>Performance &amp;</span>
-              <span>Brand</span>
+              <span>Performance</span>
+              <span>&amp; Brand</span>
               <span><i>Experience.</i></span>
             </h1>
             <div className="hero-intro">
