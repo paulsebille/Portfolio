@@ -32,7 +32,7 @@ export function Hero() {
             <h1>
               <span>Marketing,</span>
               <span>Performance</span>
-              <span>&amp; <i>Brand</i></span>
+              <span><i>&amp; Brand</i></span>
               <span><i>Experience.</i></span>
             </h1>
             <div className="hero-intro">
