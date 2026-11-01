@@ -4742,3 +4742,9 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     padding-left: 0;
   }
 }
+
+/* Keep the hero subtitle continuation inline after “transformer” */
+.hero-intro-body span {
+  display: inline;
+  margin-top: 0;
+}
