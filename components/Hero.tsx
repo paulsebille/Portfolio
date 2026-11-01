@@ -37,9 +37,9 @@ export function Hero() {
             </h1>
             <div className="hero-intro">
               <p className="hero-intro-quote">J’ai appris à faire rêver. Aujourd’hui, je veux créer des expériences qui font avancer les marques.</p>
-              <p className="hero-intro-body">Je relie stratégie marketing, expérience client et gestion de la data
+              <p className="hero-intro-body">Je relie stratégie marketing, expérience client et gestion de la data pour transformer
               <br />
-              <span>pour transformer la connaissance des publics en actions personnalisées et en résultats mesurables.</span></p>
+              <span>la connaissance des publics en actions personnalisées et en résultats mesurables.</span></p>
             </div>
             <Link href="#work" className="hero-scroll">
               <span>Explorer les projets</span>
