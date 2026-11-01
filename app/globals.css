@@ -4728,3 +4728,9 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .hero-intro-body { font-size: 12px; line-height: 1.4; }
   .hero-intro-body span { font-size: 12px; line-height: 1.4; }
 }
+
+
+/* Nudge the mobile portrait down to balance the space below it */
+@media (max-width: 640px) {
+  .hero-portrait-wrap { top: 12px; }
+}
