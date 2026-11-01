@@ -104,7 +104,7 @@ export function About() {
           <article className="about-skills-card">
             <div className="skills-card-head">
               <p className="eyebrow">Mes compétences</p>
-              <span className="skills-editorial-title">Les expertises que je mobilise.</span>
+              <span className="skills-editorial-title">Les expertises<br />que je mobilise.</span>
             </div>
             <div className="skills-showcase">
               <Reveal className="skills-showcase-group">
