@@ -4721,3 +4721,10 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     overflow-x: clip;
   }
 }
+
+/* Compact the home introduction on mobile */
+@media (max-width: 560px) {
+  .hero-intro-quote { font-size: 14px; line-height: 1.25; }
+  .hero-intro-body { font-size: 12px; line-height: 1.4; }
+  .hero-intro-body span { font-size: 12px; line-height: 1.4; }
+}
